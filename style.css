@@ -1,0 +1,522 @@
+@charset "utf-8";
+/*
+Theme Name: Exhibition
+Theme URI: http://sharedhat.com
+Description: Exhibition
+Version: 1.0
+Author: Noritaka Horio
+Author URI: http://sharedhat.com
+Tags: black, yapb
+Text Domain: exhibition
+*/
+
+
+/* Default Style
+---------------------------------------------------------*/
+* {
+/*	font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",  Verdana, Arial, Helvetica, sans-serif; */
+	font-family: Sylfaen, Georgia, "Times New Roman", serif;
+	margin: 0px;
+	padding: 0px;	
+}
+
+body {
+	font-size: 62.5%;
+	text-align: center;
+	background: transparent;
+}
+
+
+h2 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 1.6em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+p, dt, dd, ul, ol, th, td, blockquote {
+	font-size: 1.2em;
+} 
+
+a, em, strong, span, input, textarea, select {
+	font-size: 100%;
+}
+
+ul li ul {
+	font-size: 100%;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+ul li {
+	margin-bottom: 15px;
+}
+
+
+ul li strong {
+	font-weight: normal;
+	color: #3a92ad;
+}
+
+dl dt {
+	text-transform: uppercase;
+}
+
+dl dd {
+	margin-bottom: 15px;
+}
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+
+/*
+---------------------------------------------------------*/
+div#warpper {
+	text-align: left;
+}
+
+div#header {
+	position: absolute;
+	background: url(images/bgi_header_bar.png) repeat-x left top;
+	height: 47px;
+	z-index: 10;
+	width: 100%;
+}
+
+div#header div.content {
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	z-index: 11;
+	background: transparent;
+}
+
+div#header div.content div.bloginfo {
+	background: url(images/bgi_desc.png) no-repeat left top;
+	position: absolute;
+	top: 0px;
+	width: 162px;
+	height: 252px;
+}
+
+div#header div.content div.bloginfo h1 {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+
+div#header div.content div.bloginfo p {
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 0px 15px;
+}
+
+
+/* Navigation
+---------------------------------------------------------*/
+ul#nav {
+	list-style: none; 
+	z-index: 5;
+	margin-left: 170px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+ul#nav li {
+	float: left;
+	border-right: 1px solid #626262;
+
+}
+
+ul#nav a,
+div#menu a {
+	text-decoration: none;
+	display: block;
+	padding: 13px 20px 12px 20px;
+	color: #ffffff;
+}
+
+ul#nav a {
+	float: left;
+}
+
+ul#nav li li a,
+div#menu a {
+	text-align: left;
+	background: #000000;
+}
+
+ul#nav li.current_page_item a,
+div#menu li.current_page_item a {
+	background-color: #3c94af;
+}
+
+div#menu a:hover, 
+div#menu a:focus, 
+div#menu a.subMenuParentBtnFocused,
+ul#nav a.mainMenuParentBtnFocused, 
+ul#nav a:hover,
+ul#nav a:focus {
+	background-color: #3c94af;
+}
+
+div#menu .subMenuParentBtn {
+	background: url(images/arrow_right.gif) right center no-repeat;
+}
+
+div#menu .subMenuParentBtnFocused { 
+	background: url(images/arrow_right_hover.gif) right center no-repeat;  
+}
+
+ul#nav .mainMenuParentBtn,
+ul#nav .mainMenuParentBtnFocused {	
+	padding-right: 30px;
+}
+
+ul#nav .mainMenuParentBtn {	
+	background: url(images/arrow_down.gif) right center no-repeat;
+}
+
+ul#nav .mainMenuParentBtnFocused {	
+	background: url(images/arrow_down_hover.gif) right center no-repeat; 
+}
+
+.smOW {
+	display: none; 
+	position: absolute; 
+	overflow: hidden; 
+	padding: 0px 2px;
+	margin-left: -2px;
+}
+
+.smOW ul {
+	margin-top: -1px;
+}
+
+.smOW ul li {
+	margin-bottom: 0px;
+}
+
+ul#nav ul, div#menu ul {	
+	border: 1px solid #333333;
+	background: #000000;
+	left: 0px;
+	top: 0px;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+/* Footer
+----------------------------------*/
+div#footer {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin: -42px auto 0px -490px;
+	width: 980px;
+	z-index: 11;
+	height: 32px;
+	background: url(images/bgi_footer.png) left top;
+	padding-top: 15px;
+	text-align: center;
+}
+
+div#footer p {
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+div#footer p a {
+	color: #3c94af;
+}
+
+div#footer p a:hover {
+	color: #ffd700;
+}
+
+
+
+/* Exhibition
+----------------------------------*/
+ul.exhibition {
+	overflow: hidden;
+	list-style: none;
+	position: relative;
+}
+
+ul.exhibition li {
+	z-index: 5;
+	float: left;
+	position: absolute;
+	background: url(images/bgi_thumbnail.png) no-repeat center top;
+}
+
+ul.exhibition li a {
+	display: block;
+	padding: 10px 10px 7px 10px;
+	background: url(images/bgi_thumbnail.png) no-repeat center -186px;
+	outline: none;
+}
+
+ul.exhibition li strong {
+	font-weight: normal;
+	display: block;
+	padding-top: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+ul.exhibition li a img {
+	border: 1px solid #ffffff;
+}
+
+ul.exhibition li.active,
+ul.exhibition li:hover {
+	background: url(images/bgi_thumbnail_active.png) no-repeat center top;
+}
+
+ul.exhibition li.active a,
+ul.exhibition li:hover a {
+	background: url(images/bgi_thumbnail_active.png) no-repeat center -186px;
+}
+
+
+
+
+
+
+
+
+
+/* Thumbnails
+----------------------------------*/
+div#thumbnails {
+	z-index: 8;
+	margin: -130px auto 0px auto;
+	background: #000000;
+	padding: 10px 0px;
+	position: relative;
+}
+
+div#thumbnails ul {
+	overflow: hidden;
+	list-style: none;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+div#thumbnails ul li {
+	position: absolute;
+}
+
+div#thumbnails ul li a {
+	display: block;
+	padding: 5px;
+	background: #333333;
+}
+
+div#thumbnails ul li a:hover {
+	background: #3c94af;
+}
+
+div#thumbnails ul li.active a {
+	background: #3c94af;
+}
+
+
+
+
+
+
+
+
+div.tip-wrap {
+	text-align: left;
+	background: #333333;
+	color: #ffffff;
+	padding: 5px 10px;
+	z-index: 9999;
+}
+
+div.tip-wrap div.tip-top {
+}
+
+div.tip {
+}
+
+div.tip div.tip-title {
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+div.tip div.tip-text {
+	font-size: 1.2em;
+}
+
+div.tip-wrap div.tip-bottom {
+}
+
+
+
+
+div#preview {
+	z-index: 9;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #ffffff;
+	-moz-box-shadow: 0px 0px 18px #cccccc;
+	-webkit-box-shadow: 0px 0px 18px #cccccc;
+	margin-top: -80px;
+	margin-left: -84px;
+	border: 1px solid #e6e6e6;
+	overflow: hidden;
+	padding: 15px;
+	text-align: left;
+}
+
+div#preview div.photography {
+	float: left;
+	opacity: 1;
+/*	background: #000000; */
+}
+
+div#preview div.photography img {
+	border: 1px solid #cccccc;
+	opacity: 1;
+	padding: 1px;
+/*	background: #000000; */
+}
+
+div.photography div.about {
+	position: absolute;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 5px 15px;
+	background: #000000;
+	opacity: 0.8;
+	left: 26px;
+	font-weight: normal;
+	width: 250px;
+	z-index: 1000;
+}
+
+div.photography div.about h3 {
+	font-size: 1.4em;
+	margin-bottom: 5px;
+}
+
+div.photography div.about p {
+	font-size: 1.2em;
+	margin-bottom: 0px;
+}
+
+
+div.information {
+/*	color: #ffffff; */
+	float: right;
+	width: 136px;
+	padding-left: 15px;
+}
+
+div.information div.exif {
+	margin-bottom: 15px;
+}
+
+div.information h3 {
+	margin-bottom: 10px;
+}
+
+div.information ul {
+	list-style: none;
+}
+
+div.information ul li {
+	margin-bottom: 5px;
+}
+
+div.information dt {
+	font-weight: bold;
+}
+
+div.information dd {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+body.page-template-about-php div#main {
+	width: 700px;
+	margin: 0px auto;
+	z-index: 1;
+	padding: 80px 15px 0px 15px;
+	overflow: none;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}
+
+body.page-template-about-php div#main img {
+	padding: 1px;
+	border: 1px solid #cccccc;
+	margin-bottom: 5px;
+}
+
+body.page-template-about-php div#main div#sidebar {
+	float: left;
+	width: 180px;
+	display: inline;
+	text-align: right;
+}
+
+body.page-template-about-php div#main div#content {
+	float: right;
+	width: 490px;
+	display: inline;
+	border-left: 1px solid #cccccc;
+	padding-left: 15px;
+}
+
+div.vcard {
+	padding: 15px 0px 15px 0px;
+}
+
+div.vcard p.me {
+	margin-bottom: 5px;
+}
