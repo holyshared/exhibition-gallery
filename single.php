@@ -27,8 +27,8 @@
 					foreach ($exif as $key => $value) {
 			?>
 				<dl>
-					<dt><? echo $key ?>:</dt>
-					<dd><? echo $value ?></dd>
+					<dt><?php echo $key ?>:</dt>
+					<dd><?php echo $value ?></dd>
 				</dl>
 			<?php
 					}

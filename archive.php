@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: archives
-*/
-?>
 <?php get_header(); ?>
 	<ul class="exhibition">
 		<?php rewind_posts(); ?>

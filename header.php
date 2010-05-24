@@ -31,6 +31,7 @@
 							if (is_home()) {
 								query_posts('&posts_per_page=1');
 							} else if (is_tag()) {
+
 							} else if (is_category()) {
 
 							} else {
@@ -53,7 +54,8 @@
 					</div>
 					<ul id="nav">
 						<li <?php echo (is_home()) ? "class='current_page_item'" : ""; ?>><a href="<?php echo get_option('home'); ?>/">home</a></li>
-						<?php wp_list_pages('title_li='); ?>
+						<?php wp_list_categories('title_li='); ?>
+						<li><a href="<?php echo get_year_link(""); ?>">archives</a><ul><?php wp_get_archives('type=monthly'); ?></ul></li>
 					</ul>
 				</div>
 			</div>
