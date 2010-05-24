@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 	<?php $cats = exhibition_categories_ids(); ?>
-	<?php wp_reset_query(); ?>
-	<?php query_posts('cat='.join(",", $cats)."&posts_per_page=30"); ?> 
+	<?php query_posts("cat=".join(",", $cats)."&posts_per_page=30"); ?> 
 	<ul class="exhibition">
 		<?php while (have_posts()) : the_post(); ?>
 			<?php if (yapb_is_photoblog_post()): ?>

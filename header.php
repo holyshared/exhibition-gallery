@@ -28,14 +28,17 @@
 						<p class="description"><?php bloginfo('description'); ?></p>
 						<p class="period">Oct.10.2010 - Mar.1.2010</p>
 						<?php
+							$perpage = "&posts_per_page=1";
 							if (is_home()) {
-								query_posts('&posts_per_page=1');
+								query_posts($perpage);
 							} else if (is_tag()) {
-
+								query_posts('tag='.single_tag_title("", false).$perpage);
 							} else if (is_category()) {
-
+								query_posts('cat='.exhibition_categories_ids().$perpage);
+							} else if (is_archive()) {
+								query_posts($perpage);
 							} else {
-								query_posts('category_name='.get_page_uri($post->ID).'&posts_per_page=1');
+								query_posts('category_name='.get_page_uri($post->ID).$perpage);
 							}
 							the_post();
 						?> 
@@ -43,14 +46,14 @@
 							<?php
 								$title = the_title('', '', false);
 								echo yapb_get_thumbnail(
-									'<p><a rel=\'bookmark\' title=\''.$title.'\' href=\''.get_permalink().'\'>',
+									'<p class="thumbnail"><a rel=\'bookmark\' title=\''.$title.'\' href=\''.get_permalink().'\'>',
 										array('alt' => $title, 'title' => $title),
 										'</a></p>',
 										array('w=90', 'q=90')
 									);
 							?>
 						<?php endif ?>
-
+						<?php wp_reset_query(); ?>
 					</div>
 					<ul id="nav">
 						<li <?php echo (is_home()) ? "class='current_page_item'" : ""; ?>><a href="<?php echo get_option('home'); ?>/">home</a></li>

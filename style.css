@@ -114,7 +114,7 @@ div#header div.content {
 }
 
 div#header div.content div.bloginfo {
-	background: url(images/bgi_desc.png) no-repeat left top;
+	background: url(images/bgi_desc_top.png) no-repeat left top;
 	position: absolute;
 	top: 0px;
 	width: 162px;
@@ -134,12 +134,18 @@ div#header div.content div.bloginfo p {
 	padding: 0px 15px;
 }
 
+div#header div.content div.bloginfo p.thumbnail {
+	background: url(images/bgi_desc_bottom.png) no-repeat left bottom;
+	padding-bottom: 18px;
+}
+
+
 
 /* Navigation
 ---------------------------------------------------------*/
 ul#nav {
 	list-style: none; 
-	z-index: 5;
+	z-index: 9999;
 	margin-left: 170px;
 	font-size: 1.2em;
 	text-transform: uppercase;

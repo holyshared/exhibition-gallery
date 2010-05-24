@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 	<ul class="exhibition">
-		<?php rewind_posts(); ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<?php if (yapb_is_photoblog_post()): ?>
 				<?php

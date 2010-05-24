@@ -40,14 +40,12 @@
 	}
 
 	function exhibition_categories_ids() {
-		$cats[] = array();
+		$catList = array();
 		$categories = get_the_category();
 		foreach ($categories as $key => $category) {
-			$cats[] = $category->term_id;
+			$catList[] = $category->term_id;
 		}
-		return $cats;
+		return $catList;
 	}
-
-	
 	
 ?>
