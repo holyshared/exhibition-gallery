@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+#warpper {
+	text-align: left;
+}
+
+#header {
+	position: absolute;
+	background: url(../images/bgi_header_bar.png) repeat-x left top;
+	height: 47px;
+	z-index: 10;
+	width: 100%;
+}
+
+
+/* Footer
+----------------------------------*/
+#footer {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin: -47px auto 0px -240px;
+	width: 480px;
+	z-index: 11;
+	height: 32px;
+	background: url(../images/bgi_footer.png) left top;
+	padding-top: 15px;
+	text-align: center;
+}
+
+
+
+/* page-template-about-php
+----------------------------------*/
+.page-template-about-php #main {
+	width: 700px;
+	margin: 0px auto;
+/*	z-index: 1; */
+	padding: 80px 15px 0px 15px;
+	overflow: hidden;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+.page-template-about-php #main img {
+	padding: 1px;
+	border: 1px solid #cccccc;
+	margin-bottom: 5px;
+}
+
+.page-template-about-php #main #sidebar {
+	float: left;
+	width: 180px;
+	display: inline;
+	text-align: right;
+}
+
+.page-template-about-php #main #content {
+	float: right;
+	width: 490px;
+	display: inline;
+	border-left: 1px solid #cccccc;
+	padding-left: 15px;
+}
