@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<?php wp_reset_query(); ?>
 	<?php query_posts('posts_per_page=30'); ?> 
-	<ul class="exhibition">
+	<ul class="matrix">
 		<?php while (have_posts()) : the_post(); ?>
 			<?php if (yapb_is_photoblog_post()): ?>
 				<?php
@@ -18,7 +18,7 @@
 		<?php endwhile; ?>
 	</ul>
 
-	<div id="thumbnails">
+	<div class="thumbnails">
 		<ul>
 			<?php while (have_posts()) : the_post(); ?>
 				<?php if (yapb_is_photoblog_post()): ?>
@@ -36,6 +36,6 @@
 		</ul>
 	</div>
 
-	<div id="preview"><img src="<?php bloginfo('template_directory'); ?>/images/img_loading.png" /></div>
+	<div id="preview" class="previewer"><img src="<?php bloginfo('template_directory'); ?>/images/img_loading.png" /></div>
 
 <?php get_footer(); ?>

@@ -10,11 +10,14 @@
 		<?php wp_head(); ?>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mootools-core.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mootools-more.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/exhibition.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/exhibition.horizontal.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/previewer.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/menumatic.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/photogallery.js"></script>
+		<?php if (!is_page()) : ?>
+			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/exhibition.js"></script>
+			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/exhibition.horizontal.js"></script>
+			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/previewer.js"></script>
+			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/photogallery.js"></script>
+		<?php endif; ?>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/navigation.js"></script>
 		<link rel="alternate" type="application/rss+xml" title="exhibition.sharedhat.com feed" href="http://www.exhibition.sharedhat.com/?feed=rss2" />
 		<link rel="alternate" type="application/rss+xml" title="exhibition.sharedhat.com feed" href="http://www.exhibition.sharedhat.com/?feed=rss" />
 		<link rel="alternate" type="application/atom+xml" title="exhibition.sharedhat.com feed" href="http://www.exhibition.sharedhat.com/?feed=atom" />
@@ -61,10 +64,11 @@
 							<?php wp_reset_query(); ?>
 						</div>
 					</div>
-					<ul id="nav">
+					<ul id="globalNav" class="nav global">
 						<li <?php echo (is_home()) ? "class='current_page_item'" : ""; ?>><a href="<?php echo get_option('home'); ?>/">home</a></li>
 						<?php wp_list_categories('title_li='); ?>
 						<li><a href="<?php echo get_year_link(""); ?>">archives</a><ul><?php wp_get_archives('type=monthly'); ?></ul></li>
+						<?php wp_list_pages('title_li='); ?>
 					</ul>
 				</div>
 			</div>

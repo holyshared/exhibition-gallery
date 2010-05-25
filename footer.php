@@ -1,7 +1,7 @@
 			</div>
 
 			<div id="footer">
-				<p>copyright 2010 <a href="http://sharedhat.com">Noritaka Horio</a> All rights reserved.</p>
+				<p class="copyright">copyright 2010 <a href="http://sharedhat.com">Noritaka Horio</a> All rights reserved.</p>
 				<?php wp_footer(); ?>
 			</div>
 		</div>
