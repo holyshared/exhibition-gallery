@@ -14,7 +14,7 @@
 				'<p class=\'photo\'><a rel=\'bookmark\' title=\''.$title.'\' href=\''.get_permalink().'\'>',
 				array('alt' => $title, 'title' => $title),
 				'</a></p>',
-				array('w=500', 'q=90')
+				array('w=500', 'h=480', 'q=90')
 			);
 		?>
 	</div>
