@@ -10,94 +10,15 @@ Tags: black, yapb
 Text Domain: exhibition
 */
 
-
-/* Default Style
----------------------------------------------------------*/
-* {
-/*	font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",  Verdana, Arial, Helvetica, sans-serif; */
-	font-family: Sylfaen, Georgia, "Times New Roman", serif;
-	margin: 0px;
-	padding: 0px;	
-}
-
-body {
-	font-size: 62.5%;
-	text-align: center;
-	background: transparent;
-}
-
-
-h2 {
-	font-size: 2.4em;
-	font-weight: normal;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-
-h3 {
-	font-size: 1.8em;
-	font-weight: normal;
-	margin-bottom: 10px;
-}
-
-h4 {
-	font-size: 1.6em;
-	font-weight: normal;
-	margin-bottom: 5px;
-}
-
-p, dt, dd, ul, ol, th, td, blockquote {
-	font-size: 1.2em;
-} 
-
-a, em, strong, span, input, textarea, select {
-	font-size: 100%;
-}
-
-ul li ul {
-	font-size: 100%;
-}
-
-p {
-	margin-bottom: 15px;
-}
-
-ul {
-	list-style: none;
-	margin-bottom: 15px;
-}
-
-ul li {
-	margin-bottom: 15px;
-}
-
-
-ul li strong {
-	font-weight: normal;
-	color: #3a92ad;
-}
-
-dl dt {
-	text-transform: uppercase;
-}
-
-dl dd {
-	margin-bottom: 15px;
-}
-
-img {
-	border: none;
-	vertical-align: bottom;
-}
-
+@import "css/libraries.css";
 
 /*
 ---------------------------------------------------------*/
-div#warpper {
+#warpper {
 	text-align: left;
 }
 
-div#header {
+#header {
 	position: absolute;
 	background: url(images/bgi_header_bar.png) repeat-x left top;
 	height: 47px;
@@ -105,7 +26,7 @@ div#header {
 	width: 100%;
 }
 
-div#header div.content {
+#header .exhibition {
 	position: absolute;
 	top: 0px;
 	left: 15px;
@@ -113,31 +34,35 @@ div#header div.content {
 	background: transparent;
 }
 
-div#header div.content div.bloginfo {
-	background: url(images/bgi_desc_top.png) no-repeat left top;
+.exhibition .inner {
 	position: absolute;
 	top: 0px;
 	width: 162px;
 	height: 252px;
 }
 
-div#header div.content div.bloginfo h1 {
+.exhibition .inner h1 {
 	text-align: center;
 	padding-top: 20px;
 	margin-bottom: 10px;
 }
 
-div#header div.content div.bloginfo p {
+.exhibition .inner p {
 	color: #ffffff;
 	text-align: center;
-	margin-bottom: 10px;
-	padding: 0px 15px;
+	margin-bottom: 0px;
+	padding: 0px 15px 10px 15px;
 }
 
-div#header div.content div.bloginfo p.thumbnail {
+.exhibition .hd {
+	background: url(images/bgi_desc_top.png) no-repeat left top;
+}
+
+.exhibition .bd {
 	background: url(images/bgi_desc_bottom.png) no-repeat left bottom;
 	padding-bottom: 18px;
 }
+
 
 
 
