@@ -4,12 +4,14 @@ var PhotoGallery = {
 	toggle: false,
 
 	initialize: function() {
+/*
 		var myMenu = new MenuMatic({
+			"id": "globalNav",	
 			"subMenusContainerId": "menu",
 			"mmbFocusedClassName": "focused",
 			"duration": 300
 		});
-
+*/
 		this.buildPreviewer();
 		this.buildMatrix();
 		this.buildThumbnails();
@@ -23,7 +25,9 @@ var PhotoGallery = {
 	},
 
 	buildThumbnails: function() {
-		var container = $("thumbnails");
+		var container = $("warpper").getElement(".thumbnails");
+
+		//var container = $("thumbnails");
 		var thumbnailsContainer = container.getElement("ul");
 		var thumbnails = $(container).getElements("li");
 		this.thumbnails = new Exhibition.Horizontal(
@@ -45,7 +49,7 @@ var PhotoGallery = {
 			? document.documentElement.clientHeight : window.innerHeight;
 	
 		var wrapContainer = $("main");
-		var container = wrapContainer.getElement("ul.exhibition");
+		var container = wrapContainer.getElement(".matrix");
 	
 		wrapContainer.setStyle("height", height);
 		container.setStyle("height", height);
