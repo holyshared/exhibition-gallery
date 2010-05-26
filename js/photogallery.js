@@ -4,14 +4,6 @@ var PhotoGallery = {
 	toggle: false,
 
 	initialize: function() {
-/*
-		var myMenu = new MenuMatic({
-			"id": "globalNav",	
-			"subMenusContainerId": "menu",
-			"mmbFocusedClassName": "focused",
-			"duration": 300
-		});
-*/
 		this.buildPreviewer();
 		this.buildMatrix();
 		this.buildThumbnails();
@@ -104,4 +96,47 @@ var PhotoGallery = {
 	}
 	
 };
-window.addEvent("domready", PhotoGallery.initialize.bind(PhotoGallery));
+//window.addEvent("domready", PhotoGallery.initialize.bind(PhotoGallery));
+
+
+
+
+
+
+var Controller = {
+
+	initialize: function() {
+		this.setupDOM();
+		this.setupEvents();
+		this.run();
+	},
+
+	setupDOM: function() {
+		this.container = $("main");
+		this.pager = $("warpper").getElement(".thumbnailsPager");
+		this.prev = this.pager.getElement("li.prev a");
+		this.next = this.pager.getElement("li.next a");
+	},
+
+	setupEvents: function() {
+		if (this.prev) this.prev.addEvent("click", this.onClick.bindWithEvent(this, this.prev));
+		if (this.next) this.next.addEvent("click", this.onClick.bindWithEvent(this, this.next));
+	},
+
+	run: function() {
+		PhotoGallery.initialize.bind(PhotoGallery)();
+	},
+
+	onClick: function(event, element) {
+		event.stop();
+		var url = element.getProperty("href");
+		var success = function(responseText, responseXML) {
+			this.container.set("html", responseText);
+			Controller.initialize.bind(Controller)();
+//			PhotoGallery.initialize.bind(PhotoGallery)();
+		}.bind(this)
+		new Request({"url": url, "onSuccess": success}).send();
+	}
+
+};
+window.addEvent("domready", Controller.initialize.bind(Controller));

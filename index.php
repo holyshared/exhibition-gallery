@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 	<?php wp_reset_query(); ?>
-	<?php query_posts('posts_per_page=30'); ?> 
+	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+	<?php query_posts('posts_per_page=30&paged='.$paged); ?> 
 	<ul class="matrix">
 		<?php while (have_posts()) : the_post(); ?>
 			<?php if (yapb_is_photoblog_post()): ?>
@@ -17,6 +18,18 @@
 			<?php endif ?>
 		<?php endwhile; ?>
 	</ul>
+
+<?php
+	$next = get_next_posts_link();
+	$prev = get_previous_posts_link();
+?>
+
+<?php if ($next || $prev) : ?>
+	<ul class="thumbnailsPager">
+		<li class="prev"><?php if ($prev) : ?><?php echo $prev ?><?php else: ?><strong>prev</strong><?php endif; ?></li>
+		<li class="next"><?php if ($next) : ?><?php echo $next ?><?php else: ?><strong>next</strong><?php endif; ?></li>
+	</ul>
+<?php endif; ?>
 
 	<div class="thumbnails">
 		<ul>

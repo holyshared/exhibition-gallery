@@ -219,9 +219,36 @@
 
 /* Thumbnails
 ----------------------------------*/
+
+
+.thumbnailsPager {
+/*	top: 200px;
+	position: absolute;
+	z-index: 9998;
+*/
+	z-index: 8;
+	margin: -220px auto 0px -150px;
+/*	background: #000000; */
+/*	padding: 10px 0px; */
+	left: 50%;
+	position: absolute;
+	width: 300px;
+	background: #333333
+}
+
+.thumbnailsPager li.prev {
+	float: left;
+}
+
+.thumbnailsPager li.next {
+	float: right;
+}
+
+
 .thumbnails {
 	z-index: 8;
-	margin: -130px auto 0px auto;
+/*	margin: -130px auto 0px auto; */
+	margin: 0px auto 0px auto;
 	background: #000000;
 	padding: 10px 0px;
 	position: relative;
@@ -375,10 +402,6 @@
 .information dd {
 	margin-bottom: 10px;
 }
-
-
-
-
 
 
 .vcard {
