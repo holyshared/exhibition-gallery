@@ -1,6 +1,6 @@
 var PhotoGallery = {
 
-	thumbnailOffset: 80,
+	thumbnailOffset: 77,
 	toggle: false,
 
 	initialize: function() {
@@ -113,14 +113,15 @@ var Controller = {
 
 	setupDOM: function() {
 		this.container = $("main");
-		this.pager = $("warpper").getElement(".thumbnailsPager");
-		this.prev = this.pager.getElement("li.prev a");
-		this.next = this.pager.getElement("li.next a");
+		this.pager = $("warpper").getElement(".wp-pagenavi");
+		this.pages = this.pager.getElements("a");
 	},
 
 	setupEvents: function() {
-		if (this.prev) this.prev.addEvent("click", this.onClick.bindWithEvent(this, this.prev));
-		if (this.next) this.next.addEvent("click", this.onClick.bindWithEvent(this, this.next));
+		var self = this;
+		this.pages.each(function(element, key) {
+			element.addEvent("click", self.onClick.bindWithEvent(self, element));
+		});
 	},
 
 	run: function() {

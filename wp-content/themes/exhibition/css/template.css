@@ -16,18 +16,29 @@
 /* Footer
 ----------------------------------*/
 #footer {
-	position: absolute;
+/*	position: absolute; */
+	position: relative;
 	top: 100%;
-	left: 50%;
-	margin: -47px auto 0px -240px;
-	width: 480px;
+	left: 0px;
+/*	margin: -47px auto 0px -240px; */
+/*	width: 480px; */
+	margin: -42px auto 0px auto;
+	width: 100%;
 	z-index: 11;
 	height: 32px;
-	background: url(../images/bgi_footer.png) left top;
-	padding-top: 15px;
+	height: 40px;
+/*	background: url(../images/bgi_footer.png) left top; */
+/*	padding-top: 15px; */
 	text-align: center;
+	background: #000000;
+	border-top: 1px solid #222222;
+	opacity: 0.95;
 }
 
+#footer .inner {
+	padding-top: 10px;
+	padding-right: 15px;
+}
 
 
 /* page-template-about-php

@@ -62,7 +62,7 @@
 .global {
 	list-style: none; 
 	z-index: 9999;
-	margin-left: 170px;
+	margin-left: 156px;
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
@@ -245,11 +245,71 @@
 }
 
 
+
+
+
+
+
+
+.wp-pagenavi {
+	z-index: 8;
+	margin: -160px auto 0px -150px;
+	left: 50%;
+	position: absolute;
+	background: #333333;
+	text-align: center;
+	padding: 5px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi .current,
+.wp-pagenavi .last,
+.wp-pagenavi .extend {
+	display: inline-block;
+	padding: 5px 10px;
+	background: #222222;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+	font-size: 1.4em;
+	margin-left: 5px;
+	color: #ffffff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-pagenavi a:hover {
+	background: #3c94af;
+}
+
+.wp-pagenavi .current {
+	background: #3c94af;
+}
+
+.wp-pagenavi .pages {
+	padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 .thumbnails {
 	z-index: 8;
 /*	margin: -130px auto 0px auto; */
 	margin: 0px auto 0px auto;
 	background: #000000;
+	opacity: 0.95;
 	padding: 10px 0px;
 	position: relative;
 }
