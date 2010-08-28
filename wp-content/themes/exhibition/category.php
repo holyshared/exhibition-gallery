@@ -18,6 +18,8 @@
 		<?php endwhile; ?>
 	</ul>
 
+	<?php include (TEMPLATEPATH."/partials/thumbnails.pager.php"); ?>
+
 	<div class="thumbnails">
 		<ul>
 			<?php while (have_posts()) : the_post(); ?>

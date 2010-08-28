@@ -19,17 +19,7 @@
 		<?php endwhile; ?>
 	</ul>
 
-<?php
-	$next = get_next_posts_link();
-	$prev = get_previous_posts_link();
-?>
-
-<?php if ($next || $prev) : ?>
-	<ul class="thumbnailsPager">
-		<li class="prev"><?php if ($prev) : ?><?php echo $prev ?><?php else: ?><strong>prev</strong><?php endif; ?></li>
-		<li class="next"><?php if ($next) : ?><?php echo $next ?><?php else: ?><strong>next</strong><?php endif; ?></li>
-	</ul>
-<?php endif; ?>
+	<?php include (TEMPLATEPATH."/partials/thumbnails.pager.php"); ?>
 
 	<div class="thumbnails">
 		<ul>
