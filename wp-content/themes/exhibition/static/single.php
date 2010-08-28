@@ -42,6 +42,8 @@
 	</div>
 </div>
 
+<?php include (TEMPLATEPATH."/partials/thumbnails.pager.php"); ?>
+
 <?php endwhile; else: ?>
 	<p><?php _e('Sorry, no posts matched your criteria.', 'kubrick'); ?></p>
 <?php endif; ?>

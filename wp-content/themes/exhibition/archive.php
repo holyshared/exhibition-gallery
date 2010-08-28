@@ -16,8 +16,6 @@
 		<?php endwhile; ?>
 	</ul>
 
-	<?php include (TEMPLATEPATH."/partials/thumbnails.pager.php"); ?>
-
 	<div class="thumbnails">
 		<ul>
 			<?php while (have_posts()) : the_post(); ?>
@@ -37,5 +35,7 @@
 	</div>
 
 	<div id="preview" class="previewer"><img src="<?php bloginfo('template_directory'); ?>/images/img_loading.png" /></div>
+
+<?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
 
 <?php get_footer(); ?>
