@@ -68,29 +68,7 @@
 </div>
 
 <div class="sidebar">
-
-	<div class="mod categories">
-		<div class="inner">
-			<div class="hd"><h3>Categories</h3></div>
-			<div class="bd">
-				<ul>
-					<?php wp_list_categories('orderby=name&show_count=1&exclude=10&title_li='); ?>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="mod monthly">
-		<div class="inner">
-			<div class="hd"><h3>Monthly Archives</h3></div>
-			<div class="bd">
-				<ul>
-					<?php wp_get_archives('type=monthly&limit=12'); ?>
-				</ul>
-			</div>
-		</div>
-	</div>
-
+	<?php dynamic_sidebar("primary-widget-area"); ?>
 </div>
 
 </div>
