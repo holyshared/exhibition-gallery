@@ -37,6 +37,7 @@
 }
 
 .exhibition .inner p {
+	font-size: 1.2em;
 	color: #ffffff;
 	text-align: center;
 	margin-bottom: 0px;
@@ -395,20 +396,20 @@
 
 /* Previewer - Photography
 --------------------------------------------*/
-.photography {
+.previewer .photography {
 	float: left;
 	opacity: 1;
 /*	background: #000000; */
 }
 
-.photography img {
+.previewer .photography img {
 	border: 1px solid #cccccc;
 	opacity: 1;
 	padding: 1px;
 /*	background: #000000; */
 }
 
-.photography .about {
+.previewer .photography .about {
 	position: absolute;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -421,47 +422,88 @@
 	z-index: 1000;
 }
 
-.photography .about h3 {
+.previewer .photography .about h3 {
 	font-size: 1.4em;
 	margin-bottom: 5px;
 }
 
-.photography .about p {
+.previewer .photography .about p {
 	font-size: 1.2em;
 	margin-bottom: 0px;
 }
 
 /* Previewer - Information
 --------------------------------------------*/
-.information {
+.previewer .information {
 	float: right;
 	width: 136px;
 	padding-left: 15px;
 }
-
-.information .exif {
+/*
+.previewer .information .exif {
 	margin-bottom: 15px;
 }
+*/
 
-.information h3 {
+.previewer .information h3 {
 	margin-bottom: 10px;
 }
 
-.information ul {
+.previewer .information ul {
 	list-style: none;
 }
 
-.information ul li {
+.previewer .information ul li {
 	margin-bottom: 5px;
 }
 
-.information dt {
+.previewer .information dl {
+	margin-bottom: 5px;
+}
+
+.previewer .information dt {
 	font-weight: bold;
 }
 
-.information dd {
+.previewer .information dd {
 	margin-bottom: 10px;
 }
+
+
+
+
+
+/* mod */
+.mod { margin-bottom: 20px; overflow:hidden; }
+.mod .hd { overflow: hidden; /*border-bottom: 2px solid #f0f0f0;*/ margin-bottom: 10px; }
+.mod h2 { margin-bottom: 5px; color: #197296; }
+
+.mod h3, .mod .explanation { float: left; display: inline; margin-bottom: 10px; }
+.mod .explanation { padding-top: 4px; padding-left: 10px; }
+
+.photo-frame .photography {
+	width: 678px;
+	border: 1px solid #e6e6e6;
+	padding: 10px;
+}
+
+.exif ul, .tags ul {
+	margin: 0px;
+}
+
+.exif ul li, .tags ul li {
+	float: left;
+	padding: 5px 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #cccccc;	
+}
+
+
+
 
 
 .vcard {

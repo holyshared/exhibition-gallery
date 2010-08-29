@@ -1,10 +1,14 @@
 @charset "utf-8";
 
+/* Warpper
+----------------------------------*/
 #warpper {
 	text-align: left;
 }
 
-#header {
+/* Header
+----------------------------------*/
+.header {
 	position: absolute;
 	background: url(../images/bgi_header_bar.png) repeat-x left top;
 	height: 47px;
@@ -15,38 +19,39 @@
 
 /* Footer
 ----------------------------------*/
-#footer {
-/*	position: absolute; */
-	position: relative;
-	top: 100%;
-	left: 0px;
-/*	margin: -47px auto 0px -240px; */
-/*	width: 480px; */
-	margin: -42px auto 0px auto;
+.footer {
 	width: 100%;
-	z-index: 11;
-	height: 32px;
 	height: 40px;
-/*	background: url(../images/bgi_footer.png) left top; */
-/*	padding-top: 15px; */
 	text-align: center;
 	background: #000000;
 	border-top: 1px solid #222222;
 	opacity: 0.95;
 }
 
-#footer .inner {
+.footer .inner {
 	padding-top: 10px;
 	padding-right: 15px;
 }
 
+.static {
+}
+
+.relative {
+	position: relative;
+	top: 100%;
+	left: 0px;
+	margin: -42px auto 0px auto;
+	z-index: 11;
+}
+
+
 
 /* page-template-about-php
 ----------------------------------*/
+/*
 .page-template-about-php #main {
 	width: 700px;
 	margin: 0px auto;
-/*	z-index: 1; */
 	padding: 80px 15px 0px 15px;
 	overflow: hidden;
 	border-left: 1px solid #cccccc;
@@ -74,3 +79,39 @@
 	border-left: 1px solid #cccccc;
 	padding-left: 15px;
 }
+*/
+
+/*
+.container {
+	padding-top: 40px;
+	width: 960px;
+	margin: 0px auto;
+}
+*/
+
+
+.page .container,
+.single .container {
+	padding-top: 40px;
+	padding-top: 80px;
+	width: 940px;
+	margin: 0px auto;
+	overflow: hidden;
+/*	background: #f0f0f0; */
+}
+
+
+
+.contents {
+	float: left;
+	width: 700px;
+}
+
+.sidebar {
+	float: right;
+	width: 220px;
+}
+
+
+
+
