@@ -19,7 +19,7 @@
 		?>
 	</div>
 	<div class="information">
-		<div class="exif">
+<!-- 	<div class="exif"> -->	
 			<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_exif.png" /></h3>
 			<?php
 				$exif = yapb_get_exif();
@@ -34,11 +34,11 @@
 					}
 				}
 			?>
-		</div>
-		<div class="tags">
+	<!--	</div> -->	
+	<!-- 	<div class="tags"> -->	
 			<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_tags.png" /></h3>
 			<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
-		</div>
+	<!-- 	</div> -->	
 	</div>
 </div>
 

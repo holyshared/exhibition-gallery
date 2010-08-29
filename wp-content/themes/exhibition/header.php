@@ -11,7 +11,7 @@
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mootools-core.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mootools-more.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/menumatic.js"></script>
-		<?php if (!is_page()) : ?>
+		<?php if (!(is_single() || is_page())) : ?>
 			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/exhibition.js"></script>
 			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/exhibition.horizontal.js"></script>
 			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/previewer.js"></script>
@@ -24,7 +24,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="warpper">
-			<div id="header">
+			<div class="header">
 				<div class="exhibition">
 					<div class="inner">
 						<div class="hd">

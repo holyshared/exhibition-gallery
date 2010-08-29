@@ -5,6 +5,9 @@ Template Name: about
 ?>
 <?php get_header(); ?>
 
+
+<div class="container">
+
 <?php wp_reset_query(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -14,7 +17,6 @@ Template Name: about
 	</div>
 
 	<div id="sidebar">
-
 		<div class="vcard">
 			<p class="me"><img class="photo" src="<?php bloginfo('template_directory'); ?>/images/noritaka_horio.jpg" /></p>
 			<h3><a class="fn n" href=""><span class="first-name">Noritaka</span>&nbsp;<span class="last-name">Horio</span></a></h3>
@@ -34,5 +36,7 @@ Template Name: about
 	</div>
 
 <?php endwhile; endif; ?>
+
+</div>
 
 <?php get_footer(); ?>
