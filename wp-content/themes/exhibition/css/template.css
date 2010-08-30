@@ -17,6 +17,33 @@
 }
 
 
+.page .container,
+.single .container {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+/*	background: #f0f0f0; */
+}
+
+.contents {
+	float: left;
+	z-index: 1px;
+	position: relative;
+	padding: 80px 20px 0px 20px;
+	margin-left: 15px;
+	width: 640px;
+	background: #ffffff;
+	-moz-box-shadow: 0px 0px 18px #cccccc;
+	-webkit-box-shadow: 0px 0px 18px #cccccc;
+}
+
+.sidebar {
+	float: left;
+	padding: 80px 0px 0px 40px;
+	width: 220px;
+}
+
+
 /* Footer
 ----------------------------------*/
 .footer {
@@ -88,30 +115,3 @@
 	margin: 0px auto;
 }
 */
-
-
-.page .container,
-.single .container {
-	padding-top: 40px;
-	padding-top: 80px;
-	width: 940px;
-	margin: 0px auto;
-	overflow: hidden;
-/*	background: #f0f0f0; */
-}
-
-
-
-.contents {
-	float: left;
-	width: 700px;
-}
-
-.sidebar {
-	float: right;
-	width: 220px;
-}
-
-
-
-

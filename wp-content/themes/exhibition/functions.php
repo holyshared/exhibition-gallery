@@ -55,7 +55,7 @@ function exhibition_widgets_init() {
 		'id'			=> 'primary-widget-area',
 		'name'			=> __('Primary Widget Area', 'exhibition'),
 		'description'	=> __('The primary widget area', 'exhibition'),
-		'before_widget'	=> '<div class="mod %1$s %2$s"><div class="inner">',
+		'before_widget'	=> '<div class="mod aside %1$s %2$s"><div class="inner">',
 		'after_widget'	=> '</div></div></div>',
 		'before_title'	=> '<div class="hd"><h3>',
 		'after_title'	=> '</h3></div><div class="bd">',

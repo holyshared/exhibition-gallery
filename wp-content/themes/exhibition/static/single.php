@@ -29,7 +29,7 @@
 						'<p class=\'photo\'><a rel=\'bookmark\' title=\''.$title.'\' href=\''.get_permalink().'\'>',
 						array('alt' => $title, 'title' => $title),
 						'</a></p>',
-						array('w=678', 'q=90')
+						array('w=618', 'q=90')
 					);
 				?>
 			</div>

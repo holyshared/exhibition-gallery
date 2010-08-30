@@ -475,16 +475,19 @@
 
 /* mod */
 .mod { margin-bottom: 20px; overflow:hidden; }
-.mod .hd { overflow: hidden; /*border-bottom: 2px solid #f0f0f0;*/ margin-bottom: 10px; }
-.mod h2 { margin-bottom: 5px; color: #197296; }
+.mod .hd { overflow: hidden; /*border-bottom: 2px solid #f0f0f0;*/ margin-bottom: 10px;  /*border-bottom: 1px solid #dddddd;*/  }
+.mod .hd h2 { margin-bottom: 5px; color: #197296; }
+.mod .hd h3, .mod .hd .explanation { float: left; display: inline; margin-bottom: 10px; text-transform: uppercase; }
+.mod .hd .explanation { padding-top: 4px; padding-left: 10px; }
 
-.mod h3, .mod .explanation { float: left; display: inline; margin-bottom: 10px; }
-.mod .explanation { padding-top: 4px; padding-left: 10px; }
+.mod .hd h3 { color: #333333; }
+
 
 .photo-frame .photography {
-	width: 678px;
+	width: 618px;
 	border: 1px solid #e6e6e6;
 	padding: 10px;
+	background: #ffffff;
 }
 
 .exif ul, .tags ul {
@@ -499,8 +502,53 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	border: 1px solid #cccccc;	
+	border: 1px solid #cccccc;
+	background: url(../images/bgi_tags.jpg) repeat-x left bottom;
 }
+
+
+
+
+
+
+.aside .hd {
+	background: url(../images/bgi_mod_aside.jpg) no-repeat left bottom;
+}
+
+
+
+/* Widget Categories
+------------------------*/
+.widget_categories ul {
+	margin-bottom: 0px;
+}
+
+.widget_categories ul li {
+	margin-bottom: 0px;
+}
+
+.widget_categories ul li li {
+	margin-left: 10px;
+}
+
+.widget_categories ul li a {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+
+/* Widget Archive
+------------------------*/
+.widget_archive ul {
+	margin-bottom: 0px;
+}
+
+.widget_archive ul li {
+	margin-bottom: 5px;
+}
+
+
+
 
 
 
