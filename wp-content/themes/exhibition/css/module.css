@@ -585,6 +585,86 @@
 
 
 
+/* Comment
+-------------------------------------*/
+.comment {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.comment .author {
+	float: left;
+	width: 60px;
+}
+
+.comment .author img {
+	padding: 5px;
+	border: 1px solid #cccccc;
+}
+
+.comment .commentContent {
+	font-size: 100%;
+	float: right;
+	width: 510px;
+	padding: 15px;
+	margin: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	border: 1px solid #cccccc;
+	color: #333;
+	background: #fff;
+}
+
+.comment .commentContent .meta {
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+.comment .commentContent .meta li {
+	text-align: right;
+}
+
+.comment .commentContent p,
+.comment .commentContent .meta li {
+	font-size: 100%;
+}
+
+.commentContent:before {
+	content: "\00a0";
+	display: block;
+	position: absolute;
+	left: -31px;
+	width: 0;
+	height: 0;
+	top: 15px;
+	border-width: 8px 15px;
+	border-style: solid;
+	border-color: transparent #cccccc transparent transparent;
+}
+
+.commentContent:after {
+	content: "\00a0";
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: -29px;
+	width: 0;
+	height: 0;
+	border-width: 7px 15px;
+	border-style: solid;
+	border-color: transparent #fff transparent transparent;
+}
+
+
+
+
+
+
+
+
+
 .vcard {
 	padding: 15px 0px 15px 0px;
 }

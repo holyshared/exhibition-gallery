@@ -33,12 +33,16 @@
 						$authorURL	= get_comment_author_url();
 					?>
 						<li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
-							<div class="hd">
-								<h4><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo $author ?></a></h4>
-								<p class="url"><a href="<?php echo $authorURL ?>"><?php echo $authorURL ?></a></p>
-							</div>
-							<p class="photo author"><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo get_avatar( $comment, 60); ?></a></p>
-							<?php comment_text() ?>
+
+<p class="photo author"><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo get_avatar( $comment, 60); ?></a></p>
+<div class="commentContent">
+	<?php comment_text() ?>
+	<ul class="meta">
+		<li><strong>author: </strong><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo $author ?></a></li>
+		<li class="url"><strong>url: </strong><a href="<?php echo $authorURL ?>"><?php echo $authorURL ?></a></li>
+	</ul>
+</div>
+
 						</li>
 					<?php endforeach; ?>
 				</ul>

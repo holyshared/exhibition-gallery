@@ -46,7 +46,7 @@
 
 	<div class="mod exif">
 		<div class="inner">
-			<div class="hd"><h3>Exif: </h3><p class="explanation">aaaaaaaaaa</p></div>
+			<div class="hd"><h3>Exif: </h3><p class="explanation">Meta data recorded in photograph</p></div>
 			<div class="bd">
 				<ul>
 				<?php
@@ -66,7 +66,7 @@
 
 	<div class="mod tags">
 		<div class="inner">
-			<div class="hd"><h3>Tags: </h3><p class="explanation">aaaaaaaaaa</p></div>
+			<div class="hd"><h3>Tags: </h3><p class="explanation">Tag list in photograph</p></div>
 			<div class="bd"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
 		</div>
 	</div>
