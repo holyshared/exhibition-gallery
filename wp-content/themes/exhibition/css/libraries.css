@@ -5,8 +5,9 @@
 * {
 /*	font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",  Verdana, Arial, Helvetica, sans-serif; */
 	font-family: Sylfaen, Georgia, "Times New Roman", serif;
+/*	font-family: "ヒラギノ角ゴ Pro W3", "Myriad Pro", "Segoe UI",Helvetica, Arial, sans-serif; */
 	margin: 0px;
-	padding: 0px;	
+	padding: 0px;
 }
 
 body {
@@ -26,7 +27,8 @@ h2 {
 
 h3 {
 	font-size: 1.8em;
-	font-weight: normal;
+	font-weight: bold;
+	color: #333333;
 	margin-bottom: 10px;
 }
 
@@ -79,7 +81,16 @@ img {
 	vertical-align: bottom;
 }
 
+fieldset {
+	border: none;
+	margin-bottom: 15px;
+}
 
 .photo {
 	margin-bottom: 0px;
+}
+
+.controls {
+	text-align: center;
+	margin: 0px auto;
 }

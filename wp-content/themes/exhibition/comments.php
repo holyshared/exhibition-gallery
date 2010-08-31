@@ -86,7 +86,7 @@
 							</ul>
 							<p>
 								<label for="comment"><strong><?php 'Comment' ?></strong></label><br />
-								<textarea id="comment" name="comment" cols="50" rows="7"></textarea>
+								<textarea id="comment" name="comment" cols="60" rows="7"></textarea>
 							</p>
 						</fieldset>
 		

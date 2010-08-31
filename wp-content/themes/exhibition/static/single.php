@@ -5,6 +5,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+	<?php $cat = get_the_category(); $cat = array_pop($cat); ?>
 
 
 <div class="container">
@@ -15,7 +16,14 @@
 
 	<div class="mod about">
 		<div class="inner">
-			<div class="hd"><h2><?php the_title(); ?></h2></div>
+			<div class="hd">
+				<h2><?php the_title(); ?></h2>
+				<ul class="meta">
+					<li class="cat"><strong>Category: </strong><a title="<?php echo $cat->cat_name ?>の記事を見る" href="<?php echo get_category_link( $cat->cat_ID ); ?>" class="internal"><?php echo $cat->cat_name ?></a></li>
+					<li class="date"><strong>Date: </strong><?php the_time(__('F jS, Y', 'kubrick')) ?></li>
+					<li class="tags"><strong>Tags: </strong><?php the_tags(__('', 'kubrick') . ' ', ', ', '<br />'); ?></li>
+				</ul>
+			</div>
 			<div class="bd"><?php the_content('<p>' . __('Read the rest of this entry &raquo;', 'kubrick') . '</p>'); ?></div>
 		</div>
 	</div>

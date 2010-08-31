@@ -474,14 +474,36 @@
 
 
 /* mod */
-.mod { margin-bottom: 20px; overflow:hidden; }
-.mod .hd { overflow: hidden; /*border-bottom: 2px solid #f0f0f0;*/ margin-bottom: 10px;  /*border-bottom: 1px solid #dddddd;*/  }
-.mod .hd h2 { margin-bottom: 5px; color: #197296; }
-.mod .hd h3, .mod .hd .explanation { float: left; display: inline; margin-bottom: 10px; text-transform: uppercase; }
-.mod .hd .explanation { padding-top: 4px; padding-left: 10px; }
+.mod {
+	margin-bottom: 20px;
+	overflow:hidden;
+}
 
-.mod .hd h3 { color: #333333; }
+.mod .hd {
+	overflow: hidden;
+	margin-bottom: 10px;
+	background: url(../images/bgi_mod_aside.jpg) repeat-x left bottom;
+}
 
+.mod .hd h2 {
+	margin-bottom: 5px;
+	color: #197296;
+}
+
+.mod .hd h3, .mod .hd .explanation {
+	float: left;
+	display: inline;
+	margin-bottom: 10px;
+}
+
+.mod .hd h3 {
+	text-transform: uppercase;
+}
+
+.mod .hd .explanation {
+	padding-top: 4px;
+	padding-left: 10px;
+}
 
 .photo-frame .photography {
 	width: 618px;
@@ -504,15 +526,6 @@
 	border-radius: 5px;
 	border: 1px solid #cccccc;
 	background: url(../images/bgi_tags.jpg) repeat-x left bottom;
-}
-
-
-
-
-
-
-.aside .hd {
-	background: url(../images/bgi_mod_aside.jpg) no-repeat left bottom;
 }
 
 
@@ -548,9 +561,27 @@
 }
 
 
+.commentForm fieldset {
+	overflow: hidden;
+}
 
+.commentForm fieldset ul {
+	float: left;
+}
 
+.commentForm fieldset p {
+	float: right;
+}
 
+.meta {
+	margin-bottom: 10px;
+}
+
+.meta li {
+	margin-right: 5px;
+	margin-bottom: 0px;
+	display: inline-block;
+}
 
 
 
