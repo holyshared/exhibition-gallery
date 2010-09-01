@@ -52,9 +52,9 @@ function exhibition_categories_ids() {
 function exhibition_widgets_init() {
 
 	register_sidebar(array(
-		'id'			=> 'primary-widget-area',
-		'name'			=> __('Primary Widget Area', 'exhibition'),
-		'description'	=> __('The primary widget area', 'exhibition'),
+		'id'			=> 'widget-area',
+		'name'			=> __('Widget area', 'exhibition'),
+		'description'	=> __('Widget area', 'exhibition'),
 		'before_widget'	=> '<div class="mod aside %1$s %2$s"><div class="inner">',
 		'after_widget'	=> '</div></div></div>',
 		'before_title'	=> '<div class="hd"><h3>',

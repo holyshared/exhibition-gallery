@@ -8,10 +8,10 @@
 <div class="mod trackback">
 	<div class="inner">
 		<div class="hd">
-			<h3>Trackback: </h3><p class="explanation">It is a comment that has been gotten before. </p>
+			<h3><?php echo __("Trackback: ", "exhibition") ?></h3><p class="explanation"><?php echo __("It is a comment that has been gotten before.", "exhibition") ?></p>
 		</div>
 		<div class="bd">
-			<p>トラックバックを下記のURLに送ってください。<br /><a href="<?php trackback_url() ?>" rel="trackback"><?php trackback_url() ?></a></p>
+			<p><?php echo __("Please send the track back to following URL.", "exhibition") ?><br /><a href="<?php trackback_url() ?>" rel="trackback"><?php trackback_url() ?></a></p>
 		</div>
 	</div>
 </div>
@@ -23,7 +23,7 @@
 	<div class="mod comments">
 		<div class="inner">
 			<div class="hd">
-				<h3>Comment: </h3><p class="explanation">It is a comment that has been gotten before. </p>
+				<h3><?php echo __("Comment: ", "exhibition") ?></h3><p class="explanation"><?php echo __("It is a comment that has been gotten before.", "exhibition") ?></p>
 			</div>
 			<div class="bd">
 				<ul>
@@ -34,14 +34,14 @@
 					?>
 						<li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
 
-<p class="photo author"><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo get_avatar( $comment, 60); ?></a></p>
-<div class="commentContent">
-	<?php comment_text() ?>
-	<ul class="meta">
-		<li><strong>author: </strong><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo $author ?></a></li>
-		<li class="url"><strong>url: </strong><a href="<?php echo $authorURL ?>"><?php echo $authorURL ?></a></li>
-	</ul>
-</div>
+							<p class="photo author"><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo get_avatar( $comment, 60); ?></a></p>
+							<div class="commentContent">
+								<?php comment_text() ?>
+								<ul class="meta">
+									<li><strong><?php echo __("author: ", "exhibition") ?></strong><a title="<?php echo $author ?>" href="<?php echo $authorURL ?>"><?php echo $author ?></a></li>
+									<li class="url"><strong><?php echo __("url: ", "exhibition") ?></strong><a href="<?php echo $authorURL ?>"><?php echo $authorURL ?></a></li>
+								</ul>
+							</div>
 
 						</li>
 					<?php endforeach; ?>
@@ -60,7 +60,7 @@
 <div id="postcomment" class="mod commentForm">
 	<div class="inner">
 		<div class="hd">
-			<h3>Reply: </h3><p class="explanation">Please give the comment to this article. </p>
+			<h3><?php echo __("Reply: ", "exhibition") ?></h3><p class="explanation"><?php echo __("Please give the comment to this article.", "exhibition") ?></p>
 		</div>
 
 		<div class="bd">
@@ -76,26 +76,26 @@
 							<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 							<ul>
 								<li>
-									<label for="author"><strong>name<?php if ($req) '(required)' ?></strong></label><br />
+									<label for="author"><strong><?php echo __("name", "exhibition") ?><?php if ($req) '(required)' ?></strong></label><br />
 									<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="33" tabindex="1" />
 								</li>
 								<li>
-									<label for="email"><strong>email<?php if ($req) '(required)'; ?></strong></label><br />
+									<label for="email"><strong><?php echo __("email", "exhibition") ?><?php if ($req) '(required)'; ?></strong></label><br />
 									<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="33" tabindex="2" />
 								</li>
 								<li>
-									<label for="url"><strong>url</strong></label><br />
+									<label for="url"><strong><?php echo __("url", "exhibition") ?></strong></label><br />
 									<input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="33" tabindex="3" />
 								</li>
 							</ul>
 							<p>
-								<label for="comment"><strong><?php 'Comment' ?></strong></label><br />
+								<label for="comment"><strong><?php echo __("comment", "exhibition") ?></strong></label><br />
 								<textarea id="comment" name="comment" cols="60" rows="7"></textarea>
 							</p>
 						</fieldset>
 		
 					<?php endif; ?>
-					<p class="controls"><input type="submit" name="post" value="comment" /></p>
+					<p class="controls"><input type="submit" name="post" value="<?php echo __("comment", "exhibition") ?>" /></p>
 				</form>
 
 			<?php endif; // If registration required and not logged in ?>

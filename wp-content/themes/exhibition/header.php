@@ -45,6 +45,8 @@
 									query_posts($perpage);
 								} else if (is_single()) {
 									query_posts($perpage);
+								} else if (is_page()) {
+									query_posts($perpage);
 								} else {
 									query_posts('category_name='.get_page_uri($post->ID).$perpage);
 								}
