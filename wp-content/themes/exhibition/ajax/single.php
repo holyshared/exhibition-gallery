@@ -1,6 +1,3 @@
-<?php //previous_post_link('&laquo; %link') ?>
-<?php //next_post_link('%link &raquo;') ?>
-
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="container">
 	<div class="photography">

@@ -220,29 +220,22 @@
 
 /* Thumbnails
 ----------------------------------*/
-
-
-.thumbnailsPager {
-/*	top: 200px;
-	position: absolute;
-	z-index: 9998;
-*/
-	z-index: 8;
-	margin: -220px auto 0px -150px;
-/*	background: #000000; */
-/*	padding: 10px 0px; */
-	left: 50%;
-	position: absolute;
-	width: 300px;
-	background: #333333
+.prevNext {
+	width: 100%;
+	overflow: hidden;
 }
 
-.thumbnailsPager li.prev {
+.prevNext li {
+	width: 50%;
+}
+
+.prevNext .prev {
 	float: left;
 }
 
-.thumbnailsPager li.next {
+.prevNext .next {
 	float: right;
+	text-align: right;
 }
 
 

@@ -24,6 +24,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="warpper">
+
 			<div class="header">
 				<div class="exhibition">
 					<div class="inner">

@@ -3,7 +3,6 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<?php $cat = get_the_category(); $cat = array_pop($cat); ?>
 
-
 <div class="container">
 
 <div class="contents">
@@ -64,8 +63,14 @@
 			<div class="bd"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
 		</div>
 	</div>
-
 	<?php comments_template(); ?>
+
+
+
+
+
+	<?php include TEMPLATEPATH."/partials/back_and_forth.php"; ?>
+
 </div>
 
 <div class="sidebar">
