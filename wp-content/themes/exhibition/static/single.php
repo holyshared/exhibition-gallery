@@ -12,12 +12,12 @@
 			<div class="hd">
 				<h2><?php the_title(); ?></h2>
 				<ul class="meta">
-					<li class="cat"><strong><?php echo __("Category: ", "exhibition") ?></strong><a title="<?php echo $cat->cat_name ?>の記事を見る" href="<?php echo get_category_link( $cat->cat_ID ); ?>" class="internal"><?php echo $cat->cat_name ?></a></li>
+					<li class="cat"><strong><?php echo __("Category: ", "exhibition") ?></strong><a title="<?php echo $cat->cat_name ?><?php echo _e("The list is seen") ?>" href="<?php echo get_category_link( $cat->cat_ID ); ?>" class="internal"><?php echo $cat->cat_name ?></a></li>
 					<li class="date"><strong><?php echo __("Date: ", "exhibition") ?></strong><?php the_time(__('F jS, Y', 'exhibition')) ?></li>
 					<li class="tags"><strong><?php echo __("Tags: ", "exhibition") ?></strong><?php the_tags(__('', 'exhibition') . ' ', ', ', '<br />'); ?></li>
 				</ul>
 			</div>
-			<div class="bd"><?php the_content('<p>' . __('Read the rest of this entry &raquo;', 'kubrick') . '</p>'); ?></div>
+			<div class="bd"><?php the_content('<p>' . __('Read the rest of this entry &raquo;', 'exhibition') . '</p>'); ?></div>
 		</div>
 	</div>
 
