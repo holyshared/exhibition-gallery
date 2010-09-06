@@ -392,38 +392,26 @@
 .previewer .photography {
 	float: left;
 	opacity: 1;
-/*	background: #000000; */
 }
 
 .previewer .photography img {
-	border: 1px solid #cccccc;
-	opacity: 1;
 	padding: 1px;
-/*	background: #000000; */
+	margin-bottom: 10px;
+	opacity: 1;
 }
 
 .previewer .photography .about {
-	position: absolute;
-	color: #ffffff;
-	text-transform: uppercase;
-	padding: 5px 15px;
-	background: #000000;
-	opacity: 0.8;
-	left: 26px;
 	font-weight: normal;
-	width: 250px;
-	z-index: 1000;
+	text-transform: uppercase;
 }
 
 .previewer .photography .about h3 {
 	font-size: 1.4em;
 	margin-bottom: 5px;
-	color: #ffffff;
 }
 
 .previewer .photography .about p {
 	font-size: 1.2em;
-	margin-bottom: 0px;
 }
 
 /* Previewer - Information
@@ -433,11 +421,6 @@
 	width: 136px;
 	padding-left: 15px;
 }
-/*
-.previewer .information .exif {
-	margin-bottom: 15px;
-}
-*/
 
 .previewer .information h3 {
 	margin-bottom: 10px;
@@ -464,10 +447,48 @@
 }
 
 
+.previewer .information .tags li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.previewer .container {
+	overflow: hidden;
+}
+
+
+/* Previewer - Navigation
+--------------------------------------------*/
+.actions {
+	border-top: 1px solid #cccccc;
+	margin: 0px 0px 5px 0px;
+	padding-top: 10px;
+	text-align: right;
+	height: 30px;
+}
+
+.actions li {
+	display: inline;
+}
+
+.actions li a {
+	color: #ffffff;
+	background: #333333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+.actions li a:hover {
+	background: #3c94af;
+}
 
 
 
-/* mod */
+/* Module
+--------------------------------------------*/
 .mod {
 	margin-bottom: 20px;
 	overflow:hidden;
@@ -653,12 +674,8 @@
 
 
 
-
-
-
-
-
-
+/* vCard
+-------------------------------------*/
 .vcard {
 	padding: 15px 0px 15px 0px;
 }

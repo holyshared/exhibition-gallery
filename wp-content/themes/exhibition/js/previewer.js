@@ -45,7 +45,7 @@ var Preview = new Class({
 		fx.start({
 			"height": [this.size.y, size.y],
 			"width": [this.size.x, size.x],
-			"margin-top": [-this.size.y/2, -size.y/2 + this.options.offsetY],
+			"margin-top": [-this.size.y/2, -(size.y)/2 + this.options.offsetY],
 			"margin-left": [-this.size.x/2, -size.x/2],
 			"opacity": [0, 1]
 		});
@@ -64,6 +64,9 @@ var Preview = new Class({
 		fx.start("opacity", 0, 1);
 
 		var fx = this.information.get("tween", {"duration": 800});
+		fx.start("opacity", 0, 1);
+
+		var fx = this.actions.get("tween", {"duration": 600});
 		fx.start("opacity", 0, 1);
 
 		var containerHeight	 = this.photography.getSize().y;
@@ -96,16 +99,19 @@ var Preview = new Class({
 		this.photography = ct.getElement("div.photography");
 		this.information = ct.getElement("div.information");
 		this.about		 = ct.getElement("div.about");
+		this.actions	 = ct.getElement(".actions");
 		this.photography.setStyle("opacity", 0);
 		this.information.setStyle("opacity", 0);
+		this.actions.setStyle("opacity", 0);
 	},
 
 	getSize: function() {
 		var sizeL	= this.photography.getSize();
 		var sizeR	= this.information.getSize();
+		var actions = this.actions.getSize().y;
 		var width	= sizeL.x + sizeR.x;
 		var height	= (sizeL.y > sizeR.y) ? sizeL.y : sizeR.y;
-		return {x: width, y: height};
+		return {x: width, y: height + actions};
 	},
 
 	setURL: function(url) {

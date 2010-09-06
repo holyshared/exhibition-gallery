@@ -1,10 +1,6 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="container">
 	<div class="photography">
-		<div class="about">
-			<h3><?php the_title(); ?></h3>
-			<?php the_content('<p>' . __('Read the rest of this entry &raquo;', 'kubrick') . '</p>'); ?>
-		</div>
 		<?php
 			$title = the_title('', '', false);
 			echo yapb_get_thumbnail(
@@ -14,9 +10,12 @@
 				array('w=500', 'h=480', 'q=90')
 			);
 		?>
+		<div class="about">
+			<h3><?php the_title(); ?></h3>
+			<?php the_content('<p>' . __('Read the rest of this entry &raquo;', 'exhibition') . '</p>'); ?>
+		</div>
 	</div>
 	<div class="information">
-<!-- 	<div class="exif"> -->	
 			<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_exif.png" /></h3>
 			<?php
 				$exif = yapb_get_exif();
@@ -31,14 +30,16 @@
 					}
 				}
 			?>
-	<!--	</div> -->	
-	<!-- 	<div class="tags"> -->	
 			<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_tags.png" /></h3>
-			<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
-	<!-- 	</div> -->	
+			<?php the_tags('<ul class="tags"><li>','</li><li>','</li></ul>'); ?>
 	</div>
+
 </div>
+<ul class="actions">
+	<li class="view"><a title="<?php the_title(); ?>" href="<?php echo get_permalink(); ?>"><?php _e("Details in the photograph are seen", "exhibition"); ?></a></li>
+	<li class="comment"><?php comments_popup_link( __( 'Leave a comment', 'exhibition' ), __( '1 Comment', 'exhibition' ), __( '% Comments', 'exhibition' ) ); ?></li>
+</ul>
 
 <?php endwhile; else: ?>
-	<p><?php _e('Sorry, no posts matched your criteria.', 'kubrick'); ?></p>
+	<p><?php _e('Sorry, no posts matched your criteria.', 'exhibition'); ?></p>
 <?php endif; ?>

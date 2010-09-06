@@ -37,6 +37,8 @@
 		</div>
 	</div>
 
+	<?php include TEMPLATEPATH."/partials/back_and_forth.php"; ?>
+
 	<div class="mod exif">
 		<div class="inner">
 			<div class="hd"><h3><?php echo __("Exif: ", "exhibition") ?></h3><p class="explanation">Meta data recorded in photograph</p></div>
@@ -65,12 +67,7 @@
 	</div>
 	<?php comments_template(); ?>
 
-
-
-
-
 	<?php include TEMPLATEPATH."/partials/back_and_forth.php"; ?>
-
 </div>
 
 <div class="sidebar">
