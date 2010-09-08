@@ -34,7 +34,7 @@
 		</ul>
 	</div>
 
-	<div id="preview" class="previewer"><img src="<?php bloginfo('template_directory'); ?>/images/img_loading.png" /></div>
+	<div id="preview" class="previewer"><p class="spinner"><img src="<?php bloginfo('template_directory'); ?>/images/spinner.gif" /></p></div>
 
 <?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
 
