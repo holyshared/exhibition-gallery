@@ -28,20 +28,42 @@ Template Name: about
 </div>
 
 <div class="sidebar">
-		<div class="vcard">
-			<p class="me"><?php echo get_avatar(get_the_author_meta("user_email"), $size = '96') ?></p>
-			<h3><a class="fn n" href=""><span class="first-name"><?php the_author_meta("first_name"); ?></span>&nbsp;<span class="last-name"><?php the_author_meta("last_name"); ?></span></a></h3>
-			<dl>
-				<dt>nickname:</dt>
-				<dd class="nickname"><?php the_author_meta("nickname"); ?></dd>
+	
+	<div class="vcard">
+		<p class="me"><?php echo get_avatar(get_the_author_meta("user_email"), $size = '96') ?></p>
+		<h3><a class="fn n" href=""><span class="first-name"><?php the_author_meta("first_name"); ?></span>&nbsp;<span class="last-name"><?php the_author_meta("last_name"); ?></span></a></h3>
+		<dl>
+			<dt>nickname:</dt>
+			<?php
+				$nickname = get_the_author_meta("nickname");
+				if (empty($nickname)) {
+					$nickname = get_the_author_meta("user_nicename");
+				}
+			?>
+			<?php if (!empty($nickname)) : ?>
+				<dd class="nickname"><?php echo $nickname; ?></dd>
+			<?php endif; ?>
+
+			<?php $email = get_the_author_meta("email"); ?>
+			<?php if (!empty($email)) : ?>
 				<dt>email:</dt>
-				<dd><a class="email" href="mailto:<?php the_author_meta("user_email"); ?>"><?php the_author_meta("user_email"); ?></a></dd>
+				<dd><a class="email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></dd>
+			<?php endif; ?>
+
+			<?php $userURL = get_the_author_meta("user_url"); ?>
+			<?php if (!empty($userURL)) : ?>
 				<dt>url:</dt>
-				<dd><a class="url" href="<?php the_author_meta("user_url"); ?>"><?php the_author_meta("user_url"); ?></a></dd>
+				<dd><a class="url" href="<?php echo $userURL; ?>"><?php echo $userURL; ?></a></dd>
+			<?php endif; ?>
+
+			<?php $description = get_the_author_meta("description"); ?>
+			<?php if (!empty($description)) : ?>
 				<dt>description:</dt>
-				<dd><?php the_author_meta("description"); ?></dd>
-			</dl>
-		</div>
+				<dd><?php echo $description; ?></dd>
+			<?php endif; ?>
+		</dl>
+	</div>
+
 </div>
 
 </div>

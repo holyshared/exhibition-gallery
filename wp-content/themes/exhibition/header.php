@@ -31,7 +31,7 @@
 						<div class="hd">
 							<h1><a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/img_logo.png" alt="<?php bloginfo('name'); ?>" /></a></h1>
 							<p class="description"><?php bloginfo('description'); ?></p>
-							<p class="period">Oct.10.2010 - Mar.1.2010</p>
+							<p class="period">Oct.10.2010 - <?php echo date("M.m.Y") ?></p>
 						</div>
 						<div class="bd">
 							<?php
