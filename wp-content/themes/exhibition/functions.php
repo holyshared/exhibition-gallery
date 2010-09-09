@@ -64,4 +64,7 @@ function exhibition_widgets_init() {
 }
 add_action('widgets_init', 'exhibition_widgets_init');
 
+require_once(TEMPLATEPATH.'/options/exhibition.define.php');
+require_once(TEMPLATEPATH.'/options/exhibition.php');
+
 ?>

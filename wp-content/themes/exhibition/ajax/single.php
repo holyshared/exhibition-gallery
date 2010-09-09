@@ -1,3 +1,5 @@
+<?php require_once(TEMPLATEPATH.'/options/exhibition.define.php'); ?>
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="container">
 	<div class="photography">
@@ -7,7 +9,11 @@
 				'<p class=\'photo\'><a rel=\'bookmark\' title=\''.$title.'\' href=\''.get_permalink().'\'>',
 				array('alt' => $title, 'title' => $title),
 				'</a></p>',
-				array('w=500', 'h=480', 'q=90')
+				array(
+					'w='.get_option(EXHIBITION_PREVIEWER_WIDTH),
+					'h='.get_option(EXHIBITION_PREVIEWER_HEIGHT),
+					'q=90'
+				)
 			);
 		?>
 		<div class="about">
