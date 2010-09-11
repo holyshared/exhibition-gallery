@@ -10,6 +10,7 @@
 					'</a><strong title=\''.$title.'\'>'.$shortTitle.'</strong></li>',
 					array(
 						'w='.get_option(EXHIBITION_THUMBNAIL_WIDTH),
+						'h='.get_option(EXHIBITION_THUMBNAIL_HEIGHT),
 						'q='.get_option(EXHIBITION_THUMBNAIL_QUALITY)
 					)
 				);

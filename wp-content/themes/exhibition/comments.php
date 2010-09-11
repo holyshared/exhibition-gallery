@@ -20,7 +20,7 @@
 
 
 <?php if ( have_comments() ) : ?>
-	<div class="mod comments">
+	<div id="respond" class="mod comments">
 		<div class="inner">
 			<div class="hd">
 				<h3><?php echo __("Comment: ", "exhibition") ?></h3><p class="explanation"><?php echo __("It is a comment that has been gotten before.", "exhibition") ?></p>

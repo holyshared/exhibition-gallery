@@ -12,7 +12,7 @@
 				array(
 					'w='.get_option(EXHIBITION_PREVIEWER_WIDTH),
 					'h='.get_option(EXHIBITION_PREVIEWER_HEIGHT),
-					'q=90'
+					'q='.get_option(EXHIBITION_PREVIEWER_QUALITY)
 				)
 			);
 		?>
@@ -22,22 +22,22 @@
 		</div>
 	</div>
 	<div class="information">
-			<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_exif.png" /></h3>
-			<?php
-				$exif = yapb_get_exif();
-				if (count($exif) >= 1) {
-					foreach ($exif as $key => $value) {
-			?>
-				<dl>
-					<dt><?php echo $key ?>:</dt>
-					<dd><?php echo $value ?></dd>
-				</dl>
-			<?php
-					}
-				}
-			?>
-			<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_tags.png" /></h3>
-			<?php the_tags('<ul class="tags"><li>','</li><li>','</li></ul>'); ?>
+		<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_exif.png" alt="Exif" /></h3>
+		<?php
+			$exif = yapb_get_exif();
+			if (count($exif) >= 1) {
+				foreach ($exif as $key => $value) {
+		?>
+			<dl>
+				<dt><?php echo $key ?>:</dt>
+				<dd><?php echo $value ?></dd>
+			</dl>
+		<?php
+			}
+		}
+		?>
+		<h3><img src="<?php bloginfo('template_directory'); ?>/images/img_tags.png" alt="Tags" /></h3>
+		<?php the_tags('<ul class="tags"><li>','</li><li>','</li></ul>'); ?>
 	</div>
 
 </div>
