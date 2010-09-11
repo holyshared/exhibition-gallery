@@ -19,7 +19,6 @@ var PhotoGallery = {
 	buildThumbnails: function() {
 		var container = $("warpper").getElement(".thumbnails");
 
-		//var container = $("thumbnails");
 		var thumbnailsContainer = container.getElement("ul");
 		var thumbnails = $(container).getElements("li");
 		this.thumbnails = new Exhibition.Horizontal(
@@ -39,10 +38,10 @@ var PhotoGallery = {
 	buildMatrix: function() {
 		var height = (Browser.Engine.trident && Browser.Engine.version <= 6)
 			? document.documentElement.clientHeight : window.innerHeight;
-	
+
 		var wrapContainer = $("main");
 		var container = wrapContainer.getElement(".matrix");
-	
+
 		wrapContainer.setStyle("height", height);
 		container.setStyle("height", height);
 		thumbnails = container.getElements("li");
@@ -96,11 +95,6 @@ var PhotoGallery = {
 	}
 	
 };
-//window.addEvent("domready", PhotoGallery.initialize.bind(PhotoGallery));
-
-
-
-
 
 
 var Controller = {
@@ -134,7 +128,6 @@ var Controller = {
 		var success = function(responseText, responseXML) {
 			this.container.set("html", responseText);
 			Controller.initialize.bind(Controller)();
-//			PhotoGallery.initialize.bind(PhotoGallery)();
 		}.bind(this)
 		new Request({"url": url, "onSuccess": success}).send();
 	}

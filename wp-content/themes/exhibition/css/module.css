@@ -372,25 +372,23 @@
 	background: #ffffff;
 	-moz-box-shadow: 0px 0px 18px #cccccc;
 	-webkit-box-shadow: 0px 0px 18px #cccccc;
+	box-shadow: 0px 0px 18px #cccccc;
 	margin-top: -80px;
 	margin-left: -84px;
 	padding: 15px;
 	border: 1px solid #e6e6e6;
 	overflow: hidden;
-
 	width: 136px;
 }
 
 .previewer .spinner {
 	text-align: center;
-
 	margin: 30px auto;
 }
 
 .previewer .spinner img {
 	vertical-align: middle;
 }
-
 
 
 /* Previewer - Photography
