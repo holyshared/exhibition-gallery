@@ -1,12 +1,12 @@
 <?php
 
 $options = array(
-	"thumbnailWidth"	=> EXHIBITION_THUMBNAIL_WIDTH,
-	"thumbnailHeight"	=> EXHIBITION_THUMBNAIL_HEIGHT,
-	"thumbnailQuality"	=> EXHIBITION_THUMBNAIL_QUALITY,
-	"previwerWidth"		=> EXHIBITION_PREVIEWER_WIDTH,
-	"previwerHeight"	=> EXHIBITION_PREVIEWER_HEIGHT,
-	"previwerQuality"	=> EXHIBITION_PREVIEWER_QUALITY
+	"thumbnailWidth"	=> EX_THUMBNAIL_WIDTH,
+	"thumbnailHeight"	=> EX_THUMBNAIL_HEIGHT,
+	"thumbnailQuality"	=> EX_THUMBNAIL_QUALITY,
+	"previwerWidth"		=> EX_PREVIEWER_WIDTH,
+	"previwerHeight"	=> EX_PREVIEWER_HEIGHT,
+	"previwerQuality"	=> EX_PREVIEWER_QUALITY
 );
 
 $values = array();
@@ -16,13 +16,13 @@ foreach ($options as $key => $value) {
 extract($values);
 
 if ($_POST["onSubmit"] == 1) {
-	$thumbnailWidth		= $_POST[EXHIBITION_THUMBNAIL_WIDTH];
-	$thumbnailHeight	= $_POST[EXHIBITION_THUMBNAIL_HEIGHT];
-	$thumbnailQuality	= $_POST[EXHIBITION_THUMBNAIL_QUALITY];
+	$thumbnailWidth		= $_POST[EX_THUMBNAIL_WIDTH];
+	$thumbnailHeight	= $_POST[EX_THUMBNAIL_HEIGHT];
+	$thumbnailQuality	= $_POST[EX_THUMBNAIL_QUALITY];
 
-	$previwerWidth		= $_POST[EXHIBITION_PREVIEWER_WIDTH];
-	$previwerHeight		= $_POST[EXHIBITION_PREVIEWER_HEIGHT];
-	$previwerQuality	= $_POST[EXHIBITION_PREVIEWER_QUALITY];
+	$previwerWidth		= $_POST[EX_PREVIEWER_WIDTH];
+	$previwerHeight		= $_POST[EX_PREVIEWER_HEIGHT];
+	$previwerQuality	= $_POST[EX_PREVIEWER_QUALITY];
 
 	$thumbnailWidth		= (!empty($thumbnailWidth)) ? $thumbnailWidth : EX_DEFAULT_THUMBNAIL_WIDTH;
 	$thumbnailHeight	= (!empty($thumbnailHeight)) ? $thumbnailHeight : EX_DEFAULT_THUMBNAIL_HEIGHT;
@@ -32,13 +32,13 @@ if ($_POST["onSubmit"] == 1) {
 	$previwerHeight		= (!empty($previwerHeight)) ? $previwerHeight : EX_DEFAULT_PREVIEWER_HEIGHT;
 	$previwerQuality	= (!empty($previwerQuality)) ? $previwerQuality : EX_DEFAULT_PREVIEWER_QUALITY;
 	
-	if (is_int($thumbnailWidth))	update_option(EXHIBITION_THUMBNAIL_WIDTH, $thumbnailWidth);
-	if (is_int($thumbnailHeight))	update_option(EXHIBITION_THUMBNAIL_HEIGHT, $thumbnailHeight);
-	if (is_int($thumbnailQuality))	update_option(EXHIBITION_THUMBNAIL_QUALITY, $thumbnailQuality);
+	if (is_int($thumbnailWidth))	update_option(EX_THUMBNAIL_WIDTH, $thumbnailWidth);
+	if (is_int($thumbnailHeight))	update_option(EX_THUMBNAIL_HEIGHT, $thumbnailHeight);
+	if (is_int($thumbnailQuality))	update_option(EX_THUMBNAIL_QUALITY, $thumbnailQuality);
 
-	if (is_int($previwerWidth))		update_option(EXHIBITION_PREVIEWER_WIDTH, $previwerWidth);
-	if (is_int($previwerHeight))	update_option(EXHIBITION_PREVIEWER_HEIGHT, $previwerHeight);
-	if (is_int($previwerQuality))	update_option(EXHIBITION_PREVIEWER_QUALITY, $previwerQuality);
+	if (is_int($previwerWidth))		update_option(EX_PREVIEWER_WIDTH, $previwerWidth);
+	if (is_int($previwerHeight))	update_option(EX_PREVIEWER_HEIGHT, $previwerHeight);
+	if (is_int($previwerQuality))	update_option(EX_PREVIEWER_QUALITY, $previwerQuality);
 } else {
 
 	$thumbnailWidth		= (!empty($thumbnailWidth)) ? $thumbnailWidth : EX_DEFAULT_THUMBNAIL_WIDTH;
@@ -100,13 +100,13 @@ if ($_POST["onSubmit"] == 1) {
 <dl class="properties">
 
 <dt><label><?php echo __("Width", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EXHIBITION_THUMBNAIL_WIDTH; ?>" value="<?php echo $thumbnailWidth ?>" size="10" /></dd>
+<dd><input type="text" name="<?php echo EX_THUMBNAIL_WIDTH; ?>" value="<?php echo $thumbnailWidth ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Height", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EXHIBITION_THUMBNAIL_HEIGHT; ?>" value="<?php echo $thumbnailHeight ?>" size="10" /></dd>
+<dd><input type="text" name="<?php echo EX_THUMBNAIL_HEIGHT; ?>" value="<?php echo $thumbnailHeight ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Quality", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EXHIBITION_THUMBNAIL_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
+<dd><input type="text" name="<?php echo EX_THUMBNAIL_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
 
 </dl>
 
@@ -120,13 +120,13 @@ if ($_POST["onSubmit"] == 1) {
 <dl class="properties">
 
 <dt><label><?php echo __("Width", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EXHIBITION_PREVIEWER_WIDTH; ?>" value="<?php echo $previwerWidth ?>" size="10" /></dd>
+<dd><input type="text" name="<?php echo EX_PREVIEWER_WIDTH; ?>" value="<?php echo $previwerWidth ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Height", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EXHIBITION_PREVIEWER_HEIGHT; ?>" value="<?php echo $previwerHeight ?>" size="10" /></dd>
+<dd><input type="text" name="<?php echo EX_PREVIEWER_HEIGHT; ?>" value="<?php echo $previwerHeight ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Quality", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EXHIBITION_PREVIEWER_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
+<dd><input type="text" name="<?php echo EX_PREVIEWER_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
 
 </dl>
 </div>

@@ -10,9 +10,9 @@
 				array('alt' => $title, 'title' => $title),
 				'</a></p>',
 				array(
-					'w='.get_option(EXHIBITION_PREVIEWER_WIDTH),
-					'h='.get_option(EXHIBITION_PREVIEWER_HEIGHT),
-					'q='.get_option(EXHIBITION_PREVIEWER_QUALITY)
+					'w='.get_option(EX_PREVIEWER_WIDTH),
+					'h='.get_option(EX_PREVIEWER_HEIGHT),
+					'q='.get_option(EX_PREVIEWER_QUALITY)
 				)
 			);
 		?>

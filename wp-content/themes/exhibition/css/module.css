@@ -184,13 +184,11 @@
 	z-index: 5;
 	float: left;
 	position: absolute;
-	background: url(../images/bgi_thumbnail.png) no-repeat center top;
+	text-align: center;
 }
 
 .matrix li a {
 	display: block;
-	padding: 10px 10px 7px 10px;
-	background: url(../images/bgi_thumbnail.png) no-repeat center -186px;
 	outline: none;
 }
 
@@ -204,19 +202,14 @@
 }
 
 .matrix li a img {
-	border: 1px solid #ffffff;
+	padding: 5px;
+	border: 1px solid #cccccc;
 }
 
-.matrix li.active,
-.matrix li:hover {
-	background: url(../images/bgi_thumbnail_active.png) no-repeat center top;
+.matrix li.active img,
+.matrix li:hover img {
+	background: #3c94af;
 }
-
-.matrix li.active a,
-.matrix li:hover a {
-	background: url(../images/bgi_thumbnail_active.png) no-repeat center -186px;
-}
-
 
 /* Thumbnails
 ----------------------------------*/
