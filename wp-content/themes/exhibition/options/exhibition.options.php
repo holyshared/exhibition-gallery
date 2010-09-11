@@ -23,22 +23,54 @@ if ($_POST["onSubmit"] == 1) {
 	$previwerWidth		= $_POST[EX_PREVIEWER_WIDTH];
 	$previwerHeight		= $_POST[EX_PREVIEWER_HEIGHT];
 	$previwerQuality	= $_POST[EX_PREVIEWER_QUALITY];
-
+/*
 	$thumbnailWidth		= (!empty($thumbnailWidth)) ? $thumbnailWidth : EX_DEFAULT_THUMBNAIL_WIDTH;
 	$thumbnailHeight	= (!empty($thumbnailHeight)) ? $thumbnailHeight : EX_DEFAULT_THUMBNAIL_HEIGHT;
 	$thumbnailQuality	= (!empty($thumbnailQuality)) ? $thumbnailQuality : EX_DEFAULT_THUMBNAIL_QUALITY;
-
 	$previwerWidth		= (!empty($previwerWidth)) ? $previwerWidth : EX_DEFAULT_PREVIEWER_WIDTH;
 	$previwerHeight		= (!empty($previwerHeight)) ? $previwerHeight : EX_DEFAULT_PREVIEWER_HEIGHT;
 	$previwerQuality	= (!empty($previwerQuality)) ? $previwerQuality : EX_DEFAULT_PREVIEWER_QUALITY;
-	
-	if (is_int($thumbnailWidth))	update_option(EX_THUMBNAIL_WIDTH, $thumbnailWidth);
-	if (is_int($thumbnailHeight))	update_option(EX_THUMBNAIL_HEIGHT, $thumbnailHeight);
-	if (is_int($thumbnailQuality))	update_option(EX_THUMBNAIL_QUALITY, $thumbnailQuality);
+*/
+	$errors = array();
+	$thumbnailWidth = intval($thumbnailWidth);
+	if ($thumbnailWidth <= 0) {
+		$errors[EX_THUMBNAIL_WIDTH] = __("Please specify 0 or more for a width.");
+	}
 
-	if (is_int($previwerWidth))		update_option(EX_PREVIEWER_WIDTH, $previwerWidth);
-	if (is_int($previwerHeight))	update_option(EX_PREVIEWER_HEIGHT, $previwerHeight);
-	if (is_int($previwerQuality))	update_option(EX_PREVIEWER_QUALITY, $previwerQuality);
+	$thumbnailHeight = intval($thumbnailHeight);
+	if ($thumbnailHeight <= 0) {
+		$errors[EX_THUMBNAIL_HEIGHT] = __("Please specify 0 or more for a height.");
+	}
+
+	$thumbnailQuality = intval($thumbnailQuality);
+	if ($thumbnailQuality <= 0 || $thumbnailQuality >= 100) {
+		$errors[EX_THUMBNAIL_QUALITY] = __("Please specify Quality for 100 from 0.");
+	}
+
+	$previwerWidth = intval($previwerWidth);
+	if ($previwerWidth <= 0) {
+		$errors[EX_PREVIEWER_WIDTH] = __("Please specify 0 or more for a width.");
+	}
+	
+	$previwerHeight = intval($previwerHeight);
+	if ($previwerHeight <= 0) {
+		$errors[EX_PREVIEWER_HEIGHT] = __("Please specify 0 or more for a height.");
+	}
+
+	$previwerQuality = intval($previwerQuality);
+	if ($previwerQuality <= 0 || $previwerQuality >= 100) {
+		$errors[EX_PREVIEWER_QUALITY] = __("Please specify Quality for 100 from 0.");
+	}
+	
+	if (count($errors) <= 0) {
+		update_option(EX_THUMBNAIL_WIDTH, $thumbnailWidth);
+		update_option(EX_THUMBNAIL_HEIGHT, $thumbnailHeight);
+		update_option(EX_THUMBNAIL_QUALITY, $thumbnailQuality);
+		update_option(EX_PREVIEWER_WIDTH, $previwerWidth);
+		update_option(EX_PREVIEWER_HEIGHT, $previwerHeight);
+		update_option(EX_PREVIEWER_QUALITY, $previwerQuality);
+	}
+
 } else {
 
 	$thumbnailWidth		= (!empty($thumbnailWidth)) ? $thumbnailWidth : EX_DEFAULT_THUMBNAIL_WIDTH;
@@ -100,13 +132,19 @@ if ($_POST["onSubmit"] == 1) {
 <dl class="properties">
 
 <dt><label><?php echo __("Width", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EX_THUMBNAIL_WIDTH; ?>" value="<?php echo $thumbnailWidth ?>" size="10" /></dd>
+<dd>
+<?php if (!empty($errors[EX_THUMBNAIL_WIDTH])) : ?><strong class="error"><?php echo $errors[EX_THUMBNAIL_WIDTH] ?></strong><br /><?php endif; ?>
+<input type="text" name="<?php echo EX_THUMBNAIL_WIDTH; ?>" value="<?php echo $thumbnailWidth ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Height", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EX_THUMBNAIL_HEIGHT; ?>" value="<?php echo $thumbnailHeight ?>" size="10" /></dd>
+<dd>
+<?php if (!empty($errors[EX_THUMBNAIL_HEIGHT])) : ?><strong class="error"><?php echo $errors[EX_THUMBNAIL_HEIGHT] ?></strong><br /><?php endif; ?>
+<input type="text" name="<?php echo EX_THUMBNAIL_HEIGHT; ?>" value="<?php echo $thumbnailHeight ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Quality", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EX_THUMBNAIL_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
+<dd>
+<?php if (!empty($errors[EX_THUMBNAIL_QUALITY])) : ?><strong class="error"><?php echo $errors[EX_THUMBNAIL_QUALITY] ?></strong><br /><?php endif; ?>
+<input type="text" name="<?php echo EX_THUMBNAIL_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
 
 </dl>
 
@@ -120,13 +158,19 @@ if ($_POST["onSubmit"] == 1) {
 <dl class="properties">
 
 <dt><label><?php echo __("Width", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EX_PREVIEWER_WIDTH; ?>" value="<?php echo $previwerWidth ?>" size="10" /></dd>
+<dd>
+<?php if (!empty($errors[EX_PREVIEWER_WIDTH])) : ?><strong class="error"><?php echo $errors[EX_PREVIEWER_WIDTH] ?></strong><br /><?php endif; ?>
+<input type="text" name="<?php echo EX_PREVIEWER_WIDTH; ?>" value="<?php echo $previwerWidth ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Height", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EX_PREVIEWER_HEIGHT; ?>" value="<?php echo $previwerHeight ?>" size="10" /></dd>
+<dd>
+<?php if (!empty($errors[EX_PREVIEWER_HEIGHT])) : ?><strong class="error"><?php echo $errors[EX_PREVIEWER_HEIGHT] ?></strong></stong><br /><?php endif; ?>
+<input type="text" name="<?php echo EX_PREVIEWER_HEIGHT; ?>" value="<?php echo $previwerHeight ?>" size="10" /></dd>
 
 <dt><label><?php echo __("Quality", "exhibition"); ?>:&nbsp;</label></dt>
-<dd><input type="text" name="<?php echo EX_PREVIEWER_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
+<dd>
+<?php if (!empty($errors[EX_PREVIEWER_QUALITY])) : ?><strong class="error"><?php echo $errors[EX_PREVIEWER_QUALITY] ?></strong><br /><?php endif; ?>
+<input type="text" name="<?php echo EX_PREVIEWER_QUALITY; ?>" value="<?php echo $thumbnailQuality ?>" size="10" /></dd>
 
 </dl>
 </div>
