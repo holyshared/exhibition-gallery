@@ -31,7 +31,7 @@ Template Name: about
 	
 	<div class="vcard">
 		<p class="me"><?php echo get_avatar(get_the_author_meta("user_email"), $size = '96') ?></p>
-		<h3><a class="fn n" href=""><span class="first-name"><?php the_author_meta("first_name"); ?></span>&nbsp;<span class="last-name"><?php the_author_meta("last_name"); ?></span></a></h3>
+		<h3><a class="fn n" href="<?php get_the_author_meta("user_url"); ?>"><span class="first-name"><?php the_author_meta("first_name"); ?></span>&nbsp;<span class="last-name"><?php the_author_meta("last_name"); ?></span></a></h3>
 		<dl>
 			<dt>nickname:</dt>
 			<?php

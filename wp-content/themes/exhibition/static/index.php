@@ -1,6 +1,7 @@
 <?php include TEMPLATEPATH.'/options/exhibition.define.php'; ?>
 
 <?php get_header(); ?>
+
 	<?php wp_reset_query(); ?>
 	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 	<?php query_posts('posts_per_page=30&paged='.$paged); ?> 
@@ -10,8 +11,6 @@
 
 	<div id="preview" class="previewer"><p class="spinner"><img src="<?php bloginfo('template_directory'); ?>/images/spinner.gif" /></p></div>
 
-
 <?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-
 
 <?php get_footer(); ?>

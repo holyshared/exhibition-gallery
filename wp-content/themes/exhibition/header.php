@@ -18,9 +18,9 @@
 			<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/photogallery.js"></script>
 		<?php endif; ?>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/navigation.js"></script>
-		<link rel="alternate" type="application/rss+xml" title="exhibition.sharedhat.com feed" href="http://www.exhibition.sharedhat.com/?feed=rss2" />
-		<link rel="alternate" type="application/rss+xml" title="exhibition.sharedhat.com feed" href="http://www.exhibition.sharedhat.com/?feed=rss" />
-		<link rel="alternate" type="application/atom+xml" title="exhibition.sharedhat.com feed" href="http://www.exhibition.sharedhat.com/?feed=atom" />
+		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> feed" href="http://www.exhibition.sharedhat.com/?feed=rss2" />
+		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> feed" href="http://www.exhibition.sharedhat.com/?feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> feed" href="http://www.exhibition.sharedhat.com/?feed=atom" />
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="warpper">
