@@ -3,28 +3,19 @@
 define('EX_HEADER_PREFIX', 'HTTP_');
 define('EX_HEADER_X_REQUESTED_WITH', 'X_REQUESTED_WITH');
 
-function exhibition_randompost() {
-	global $wpdb, $tableposts, $post;
+function exhibition_oldpost() {
+	global $wpdb;
 
-	$query = 'SELECT count(ID) as c
-		FROM $tableposts
-		WHERE post_status = %s AND ID <> %d';
+	$table = $wpdb->posts;
+	$query = 'SELECT min(post_date) as old_date
+		FROM '.$table.'
+		WHERE post_status = %s';
 
-	$query = $wpdb->prepare($query, 'publish', $post->ID);
-	$wpdb->query($query);
-	$count = $wpdb->get_results();
-	$count = array_shift($count);
-	$count = rand(0, $count->c);
+	$query = $wpdb->prepare($query, 'publish');
+	$results = $wpdb->get_results($query, ARRAY_A);
+	$results = array_shift($results);
 
-	$query = 'SELECT ID, post_title
-		FROM $tableposts
-		WHERE post_status = %s
-		LIMIT %d, 1';
-		
-	$query = $wpdb->prepare($query, 'publish', $count);
-	$wpdb->query($query);
-	$post = $wpdb->get_results();
-	return array_pop($post);
+	return $results["old_date"];
 }
 
 function exhibition_is_ajax() {

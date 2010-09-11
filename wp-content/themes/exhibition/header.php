@@ -28,10 +28,14 @@
 			<div class="header">
 				<div class="exhibition">
 					<div class="inner">
+						<?php
+							$periodFrom = exhibition_oldpost();
+							$periodFrom = date("M.n.Y", strtotime($periodFrom));
+						?>
 						<div class="hd">
 							<h1><a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/img_logo.png" alt="<?php bloginfo('name'); ?>" /></a></h1>
 							<p class="description"><?php bloginfo('description'); ?></p>
-							<p class="period">Oct.10.2010 - <?php echo date("M.m.Y") ?></p>
+							<p class="period"><?php echo $periodFrom; ?>-<?php echo date("M.n.Y") ?></p>
 						</div>
 						<div class="bd">
 							<?php
