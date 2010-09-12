@@ -43,15 +43,25 @@ function exhibition_categories_ids() {
 function exhibition_widgets_init() {
 
 	register_sidebar(array(
-		'id'			=> 'widget-area',
-		'name'			=> __('Widget area', 'exhibition'),
-		'description'	=> __('Widget area', 'exhibition'),
+		'id'			=> 'widget-primary',
+		'name'			=> __('Widget Primary', 'exhibition'),
+		'description'	=> __('Widget Primary', 'exhibition'),
 		'before_widget'	=> '<div class="mod aside %1$s %2$s"><div class="inner">',
 		'after_widget'	=> '</div></div></div>',
 		'before_title'	=> '<div class="hd"><h3>',
 		'after_title'	=> '</h3></div><div class="bd">',
 	));
 
+	register_sidebar(array(
+		'id'			=> 'widget-pages',
+		'name'			=> __('Widget Pages', 'exhibition'),
+		'description'	=> __('Widget Pages', 'exhibition'),
+		'before_widget'	=> '<div class="mod aside %1$s %2$s"><div class="inner">',
+		'after_widget'	=> '</div></div></div>',
+		'before_title'	=> '<div class="hd"><h3>',
+		'after_title'	=> '</h3></div><div class="bd">',
+	));
+	
 }
 add_action('widgets_init', 'exhibition_widgets_init');
 

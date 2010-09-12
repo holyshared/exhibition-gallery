@@ -71,7 +71,7 @@
 </div>
 
 <div class="sidebar">
-	<?php dynamic_sidebar("widget-area"); ?>
+	<?php dynamic_sidebar("widget-primary"); ?>
 </div>
 
 </div>
