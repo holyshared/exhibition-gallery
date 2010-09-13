@@ -2,8 +2,10 @@ var PhotoGallery = {
 
 	thumbnailOffset: 77,
 	toggle: false,
+	tips: null,
 
 	initialize: function() {
+		this.tips = (this.tips) ? this.tips : new Tips();
 		this.buildPreviewer();
 		this.buildMatrix();
 		this.buildThumbnails();
@@ -29,7 +31,8 @@ var PhotoGallery = {
 				"onChange": this.onThumbnailPhotoChange.bind(this)	
 			}
 		);
-		new Tips(thumbnailsContainer.getElements('a'));
+		this.tips.detach(thumbnailsContainer.getElements('a'));
+		this.tips.attach(thumbnailsContainer.getElements('a'));
 
 		var containerHeight = thumbnailsContainer.getSize().y;
 		container.setStyle("margin-top", -(containerHeight + this.thumbnailOffset));
@@ -52,7 +55,9 @@ var PhotoGallery = {
 			"onActive": this.onMatrixPhotoSelect.bind(this),
 			"onChange": this.onMatrixPhotoChange.bind(this)
 		});
-		new Tips(container.getElements('a'));
+
+		this.tips.detach(container.getElements('a'));
+		this.tips.attach(container.getElements('a'));
 	},
 
 
