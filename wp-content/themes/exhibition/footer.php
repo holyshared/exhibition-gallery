@@ -1,7 +1,6 @@
 			</div>
 
-			<?php $className = (is_single() || is_page()) ? "static" : "relative"; ?>
-			<div class="footer <?php echo $className; ?>">
+			<div class="footer">
 				<div class="inner">
 					<?php
 						$first_name	= get_the_author_meta("first_name");

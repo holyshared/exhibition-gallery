@@ -108,11 +108,12 @@ var Controller = {
 	setupDOM: function() {
 		this.container = $("main");
 		this.pager = $("warpper").getElement(".wp-pagenavi");
-		this.pages = this.pager.getElements("a");
+		this.pages = (this.pager) ? this.pager.getElements("a") : null;
 	},
 
 	setupEvents: function() {
 		var self = this;
+		if (!this.pages) return false;
 		this.pages.each(function(element, key) {
 			element.addEvent("click", self.onClick.bindWithEvent(self, element));
 		});

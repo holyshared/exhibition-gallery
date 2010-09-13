@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /* Default Style
 ---------------------------------------------------------*/
@@ -16,6 +16,9 @@ body {
 	background: transparent;
 }
 
+body.dynamicPage {
+	overflow: hidden;
+}
 
 h2 {
 	font-size: 4.0em;

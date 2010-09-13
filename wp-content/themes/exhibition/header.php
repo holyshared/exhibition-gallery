@@ -22,7 +22,8 @@
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> feed" href="http://www.exhibition.sharedhat.com/?feed=rss" />
 		<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> feed" href="http://www.exhibition.sharedhat.com/?feed=atom" />
 	</head>
-	<body <?php body_class(); ?>>
+	<?php $className = (is_single() || is_page()) ? "staticPage" : "dynamicPage"; ?>
+	<body <?php body_class($className); ?>>
 		<div id="warpper">
 
 			<div class="header">

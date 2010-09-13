@@ -18,13 +18,13 @@ var Preview = new Class({
 
 		this.openingFx = {
 			"duration": 400,
-			"transition": Fx.Transitions.Expo.easeOut,
+			"transition": "expo:out",
 			"link": "chain",
 			"onChainComplete": this.onOpen.bind(this)
 		}
 
 		this.closeingFx = {
-			"duration": 800,
+			"duration": 600,
 			"transition": "expo:out",
 			"link": "chain",
 			"onChainComplete": this.onClose.bind(this)
@@ -100,7 +100,10 @@ var Preview = new Class({
 		this.information = ct.getElement("div.information");
 		this.about		 = ct.getElement("div.about");
 		this.actions	 = ct.getElement(".actions");
-		this.photography.setStyle("opacity", 0);
+		this.photo		 = ct.getElement(".photo");
+
+		var width = this.photo.getWidth();
+		this.photography.setStyles({"opacity": 0, "width": width + "px"});
 		this.information.setStyle("opacity", 0);
 		this.actions.setStyle("opacity", 0);
 	},
