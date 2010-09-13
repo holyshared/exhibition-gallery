@@ -410,7 +410,7 @@
 }
 
 .previewer .photography .about h3 {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin-bottom: 5px;
 }
 
@@ -431,6 +431,7 @@
 }
 
 .previewer .information ul {
+	font-size: 1.2em;
 	list-style: none;
 }
 
@@ -439,14 +440,17 @@
 }
 
 .previewer .information dl {
+	font-size: 1.2em;
 	margin-bottom: 5px;
 }
 
 .previewer .information dt {
+	font-size: 100%;
 	font-weight: bold;
 }
 
 .previewer .information dd {
+	font-size: 100%;
 	margin-bottom: 10px;
 }
 
