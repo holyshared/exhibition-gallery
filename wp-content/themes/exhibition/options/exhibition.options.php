@@ -23,14 +23,7 @@ if ($_POST["onSubmit"] == 1) {
 	$previwerWidth		= $_POST[EX_PREVIEWER_WIDTH];
 	$previwerHeight		= $_POST[EX_PREVIEWER_HEIGHT];
 	$previwerQuality	= $_POST[EX_PREVIEWER_QUALITY];
-/*
-	$thumbnailWidth		= (!empty($thumbnailWidth)) ? $thumbnailWidth : EX_DEFAULT_THUMBNAIL_WIDTH;
-	$thumbnailHeight	= (!empty($thumbnailHeight)) ? $thumbnailHeight : EX_DEFAULT_THUMBNAIL_HEIGHT;
-	$thumbnailQuality	= (!empty($thumbnailQuality)) ? $thumbnailQuality : EX_DEFAULT_THUMBNAIL_QUALITY;
-	$previwerWidth		= (!empty($previwerWidth)) ? $previwerWidth : EX_DEFAULT_PREVIEWER_WIDTH;
-	$previwerHeight		= (!empty($previwerHeight)) ? $previwerHeight : EX_DEFAULT_PREVIEWER_HEIGHT;
-	$previwerQuality	= (!empty($previwerQuality)) ? $previwerQuality : EX_DEFAULT_PREVIEWER_QUALITY;
-*/
+
 	$errors = array();
 	$thumbnailWidth = intval($thumbnailWidth);
 	if ($thumbnailWidth <= 0) {
