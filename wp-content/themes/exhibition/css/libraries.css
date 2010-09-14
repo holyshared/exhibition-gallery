@@ -37,7 +37,8 @@ h3 {
 
 h4 {
 	font-size: 1.6em;
-	font-weight: normal;
+	font-weight: bold;
+	color: #333333;
 	margin-bottom: 5px;
 }
 

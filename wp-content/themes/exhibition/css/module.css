@@ -694,6 +694,20 @@
 }
 
 
+.search .searchResult {
+	width: 500px;
+	margin: 0px auto 0px auto;
+	padding-top: 100px;
+}
+
+.search .searchForm {
+	border: 1px solid #cccccc;
+	width: 468px;
+	padding: 15px;
+	margin: 50px auto 0px auto;
+}
+
+
 
 /* vCard
 -------------------------------------*/

@@ -1,4 +1,4 @@
-CHANGE LOG
+EXHIBITION CHANGE LOG
 ====================================
 
 ## Japanese
@@ -9,9 +9,12 @@ CHANGE LOG
 * Operaでスクロールバーが表示される不具合を修正。
 * ページナビゲーションなしのときにjavascriptエラーが出ていたのを修正。
 * ツールチップが表示され続けるバグ対応。
-* アーカイブのページが正しく表示されないバグを修正
+* アーカイブのページが正しく表示されないバグを修正。
 * ページャの位置を中央にくるよう対応。
-* RSSアイコンをフッターに追加
+* RSSアイコンをフッターに追加。
+* 検索結果テンプレートを追加。
+
+
 
 ## English
 
@@ -22,6 +25,7 @@ CHANGE LOG
 * Trouble to which the scrollbar is displayed with Opera is corrected.
 * It is corrected that the javascript error had gone out when there is no page navigation.
 * For bug to which tool chip keeps being displayed.
-* The bug to which the page of the archive is not correctly displayed is corrected. 
+* The bug to which the page of the archive is not correctly displayed is corrected.
 * It corresponds so that the position of the pager may come to the center.
 * The RSS icon is added to the footer.
+* The retrieval result template is added.

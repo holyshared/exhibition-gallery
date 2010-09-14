@@ -20,6 +20,7 @@ var PhotoGallery = {
 
 	buildThumbnails: function() {
 		var container = $("warpper").getElement(".thumbnails");
+		if (!container) return false;
 
 		var thumbnailsContainer = container.getElement("ul");
 		var thumbnails = $(container).getElements("li");
@@ -46,6 +47,8 @@ var PhotoGallery = {
 		var container = wrapContainer.getElement(".matrix");
 
 		wrapContainer.setStyle("height", height);
+		if (!container) return false;
+
 		container.setStyle("height", height);
 		thumbnails = container.getElements("li");
 
@@ -126,8 +129,8 @@ var Controller = {
 	},
 
 	setupStyles: function() {
-		var width = this.pager.getWidth();
 		if (!this.pager) return false;
+		var width = this.pager.getWidth();
 		this.pager.setStyle("margin-left", -width/2);
 	},
 	

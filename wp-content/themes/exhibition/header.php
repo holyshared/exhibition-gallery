@@ -53,22 +53,26 @@
 									query_posts($perpage);
 								} else if (is_page()) {
 									query_posts($perpage);
+								} else if (is_search()) {
+									query_posts('s='.get_query_var('s').$perpage);
 								} else {
 									query_posts('category_name='.get_page_uri($post->ID).$perpage);
 								}
 								the_post();
-							?> 
-							<?php if (yapb_is_photoblog_post()): ?>
-								<?php
-									$title = the_title('', '', false);
-									echo yapb_get_thumbnail(
-										'<p class="thumbnail"><a rel=\'bookmark\' title=\''.$title.'\' href=\''.get_permalink().'\'>',
-											array('alt' => $title, 'title' => $title),
-											'</a></p>',
-											array('w=90', 'q=90')
-										);
-								?>
-							<?php endif ?>
+							?>
+
+							<?php if (!yapb_is_photoblog_post()): ?>
+								<?php query_posts('offset=1'); the_post(); ?>
+							<?php endif; ?>
+							<?php
+								$title = the_title('', '', false);
+								echo yapb_get_thumbnail(
+									'<p class="thumbnail"><a rel=\'bookmark\' title=\''.$title.'\' href=\''.get_permalink().'\'>',
+										array('alt' => $title, 'title' => $title),
+										'</a></p>',
+										array('w=90', 'q=90')
+									);
+							?>
 							<?php wp_reset_query(); ?>
 						</div>
 					</div>
