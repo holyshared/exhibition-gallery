@@ -107,6 +107,7 @@ var Controller = {
 	initialize: function() {
 		this.setupDOM();
 		this.setupEvents();
+		this.setupStyles();
 		this.run();
 	},
 
@@ -124,6 +125,12 @@ var Controller = {
 		});
 	},
 
+	setupStyles: function() {
+		var width = this.pager.getWidth();
+		if (!this.pager) return false;
+		this.pager.setStyle("margin-left", -width/2);
+	},
+	
 	run: function() {
 		PhotoGallery.initialize.bind(PhotoGallery)();
 	},

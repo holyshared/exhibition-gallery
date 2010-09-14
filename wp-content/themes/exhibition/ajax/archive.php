@@ -1,5 +1,3 @@
-<?php query_posts("cat=".get_query_var('cat')."&posts_per_page=30&paged=".get_query_var("paged")); ?>
-
 <?php include TEMPLATEPATH.'/partials/matrix.php'; ?>
 <?php include TEMPLATEPATH.'/partials/thumbnails.php'; ?>
 
