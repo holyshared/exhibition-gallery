@@ -11,6 +11,7 @@ CHANGE LOG
 * ツールチップが表示され続けるバグ対応。
 * アーカイブのページが正しく表示されないバグを修正
 * ページャの位置を中央にくるよう対応。
+* RSSアイコンをフッターに追加
 
 ## English
 
@@ -23,3 +24,4 @@ CHANGE LOG
 * For bug to which tool chip keeps being displayed.
 * The bug to which the page of the archive is not correctly displayed is corrected. 
 * It corresponds so that the position of the pager may come to the center.
+* The RSS icon is added to the footer.

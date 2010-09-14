@@ -2,6 +2,7 @@
 
 			<div class="footer">
 				<div class="inner">
+					<p class="feed"><a href="<?php bloginfo('url'); ?>?feed=atom"><img src="<?php bloginfo('template_directory'); ?>/images/feed.png" alt="Feed" /></a></p>
 					<?php
 						$first_name	= get_the_author_meta("first_name");
 						$last_name	= get_the_author_meta("last_name");

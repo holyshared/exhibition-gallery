@@ -153,9 +153,20 @@
 
 /* Copyright
 ----------------------------------*/
+.copyright, .feed {
+	display: inline;
+}
+
 .copyright {
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+.feed img {
+	vertical-align: middle;
+}
+.feed {
+	margin-right: 5px;
 }
 
 .copyright a {
@@ -166,7 +177,9 @@
 	color: #ffd700;
 }
 
-
+.footer .inner {
+	text-align: center;
+}
 
 
 
