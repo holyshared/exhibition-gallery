@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-15 11:25+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\about.php:23
+msgid "Read the whole story..."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:2
+msgid "Enter your password to view comments."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:11
+msgid "Trackback: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:11
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:26
+msgid "It is a comment that has been gotten before."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:14
+msgid "Please send the track back to following URL."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:26
+msgid "Comment: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:41
+msgid "author: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:42
+msgid "url: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:63
+msgid "Reply: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:63
+msgid "Please give the comment to this photograph."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:69
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:73
+#, php-format
+msgid "Logged in as %s."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:73
+msgid "Log out of this account"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:73
+msgid "Log out &raquo;"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:79
+msgid "name"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:83
+msgid "email"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:87
+msgid "url"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:92
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:98
+msgid "comment"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:107
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:47
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:48
+msgid "Widget Primary"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:57
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:58
+msgid "Widget Pages"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\page.php:14
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:21
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:20
+msgid "Read the rest of this entry &raquo;"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\page.php:28
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:50
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:80
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\search.php:17
+msgid "Retrieval result"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\search.php:19
+msgid "Sorry. The corresponding photograph was not found."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:45
+msgid "Details in the photograph are seen"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:46
+msgid "Leave a comment"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:46
+msgid "1 Comment"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:46
+msgid "% Comments"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:30
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:45
+msgid "Please specify 0 or more for a width."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:35
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:50
+msgid "Please specify 0 or more for a height."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:40
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:55
+msgid "Please specify Quality for 100 from 0."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:110
+msgid "Exhibition Options"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:111
+msgid "The setting of the Exhibition theme can be changed."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:116
+msgid "General setting"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:117
+msgid "The image size of the photograph can be set."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:119
+msgid "Thumbnail setting"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:127
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:153
+msgid "Width"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:132
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:158
+msgid "Height"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:137
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:163
+msgid "Quality"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:147
+msgid "Previwer setting"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.options.php:171
+msgid "Save"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\options\exhibition.php:15
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:15
+msgid "Category: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:15
+msgid "The list is seen"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:16
+msgid "Date: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:16
+msgid "F jS, Y"
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:17
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:64
+msgid "Tags: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:44
+msgid "Exif: "
+msgstr ""
+
+#: C:\storage\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:64
+msgid "Tag list in photograph"
+msgstr ""
