@@ -13,6 +13,7 @@ EXHIBITION CHANGE LOG
 * ページャの位置を中央にくるよう対応。
 * RSSアイコンをフッターに追加。
 * 検索結果テンプレートを追加。
+* 多言語化対応
 
 
 
@@ -29,3 +30,4 @@ EXHIBITION CHANGE LOG
 * It corresponds so that the position of the pager may come to the center.
 * The RSS icon is added to the footer.
 * The retrieval result template is added.
+* For multilingualization.
