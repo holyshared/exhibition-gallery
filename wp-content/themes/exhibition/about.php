@@ -64,6 +64,8 @@ Template Name: about
 		</dl>
 	</div>
 
+	<?php dynamic_sidebar("widget-page"); ?>
+
 </div>
 
 </div>
