@@ -20,7 +20,7 @@ Template Name: about
 				<h2><?php the_title(); ?></h2>
 			</div>
 			<div class="bd">
-				<?php the_content('<p class="serif"><strong>'.__("Read the whole story...", "exhibition").'</strong></p>'); ?>
+				<?php the_content(); ?>
 			</div>
 		</div>
 	</div>

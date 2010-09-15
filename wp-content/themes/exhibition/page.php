@@ -19,7 +19,7 @@
 </div>
 
 <div class="sidebar">
-	<?php dynamic_sidebar("widget-pages"); ?>
+	<?php dynamic_sidebar("widget-page"); ?>
 </div>
 
 </div>

@@ -2,7 +2,6 @@
 <p><?php _e('Enter your password to view comments.'); ?></p>
 <?php return; endif; ?>
 
-
 <?php if ( pings_open() ) : ?>
 
 <div class="mod trackback">
@@ -60,7 +59,7 @@
 <div id="postcomment" class="mod commentForm">
 	<div class="inner">
 		<div class="hd">
-			<h3><?php echo __("Reply: ", "exhibition") ?></h3><p class="explanation"><?php echo __("Please give the comment to this photograph.", "exhibition") ?></p>
+			<h3><?php echo __("Comment Form: ", "exhibition") ?></h3><p class="explanation"><?php echo __("Please give the comment to this photograph.", "exhibition") ?></p>
 		</div>
 
 		<div class="bd">
