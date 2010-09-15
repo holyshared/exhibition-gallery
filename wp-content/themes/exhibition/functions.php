@@ -3,6 +3,24 @@
 define('EX_HEADER_PREFIX', 'HTTP_');
 define('EX_HEADER_X_REQUESTED_WITH', 'X_REQUESTED_WITH');
 
+add_action('after_setup_theme', 'exhibition_setup');
+
+if (!function_exists('exhibition_setup')):
+
+function exhibition_setup() {
+
+	load_theme_textdomain('exhibition', TEMPLATEPATH.'/languages');
+
+	$locale = get_locale();
+	$locale_file = TEMPLATEPATH . "/languages/$locale.php";
+	if (is_readable($locale_file)) {
+		require_once ($locale_file);
+	};
+}
+
+endif;
+
+
 function exhibition_oldpost() {
 	global $wpdb;
 

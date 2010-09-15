@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: exhibition - 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-15 11:25+0900\n"
-"PO-Revision-Date: 2010-09-15 23:33+0900\n"
+"PO-Revision-Date: 2010-09-16 00:25+0900\n"
 "Last-Translator: Noritaka Horio <holy.shared.design@gmail.com>\n"
 "Language-Team: Noritaka Horio <holy.shared.design@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,22 @@ msgstr ""
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:36
+msgid "nickname:"
+msgstr "ニックネーム"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:49
+msgid "email:"
+msgstr "メールアドレス:"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:55
+msgid "url:"
+msgstr "url:"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:61
+msgid "description:"
+msgstr "詳細:"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:2
 msgid "Enter your password to view comments."
@@ -27,13 +43,16 @@ msgid "Trackback: "
 msgstr "トラックバック: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:10
+msgid "It is a transmitted track back list."
+msgstr "送信されたトラックバック一覧です。"
+
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
 msgid "It is a comment that has been gotten before."
-msgstr "頂いたコメント"
+msgstr "頂いたコメントです。"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:13
 msgid "Please send the track back to following URL."
-msgstr "下記のURLにトラックバックを送信してください"
+msgstr "下記のURLにトラックバックを送信してください。"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
 msgid "Comment: "
@@ -41,7 +60,7 @@ msgstr "コメント: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:40
 msgid "author: "
-msgstr "著作者"
+msgstr "投稿者"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:41
 msgid "url: "
@@ -79,7 +98,7 @@ msgstr "名前"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:82
 msgid "email"
-msgstr "email"
+msgstr "メールアドレス"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:86
 msgid "url"
@@ -94,19 +113,19 @@ msgstr "コメント"
 msgid "Sorry, the comment form is closed at this time."
 msgstr "すみません、コメントフォームは現在利用できません。"
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:47
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:65
 msgid "Widget on single page"
 msgstr "シングルページ用のウィジェット"
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:48
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:66
 msgid "Widget list for single page"
 msgstr "シングルページ用のウィジェットリスト"
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:57
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:75
 msgid "Widget on page"
 msgstr "ページ用のウィジェット"
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:58
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:76
 msgid "Widget list for page"
 msgstr "ページ用のウィジェットリスト"
 
@@ -232,9 +251,13 @@ msgstr "タグ: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:44
 msgid "Exif: "
-msgstr "Exif: "
+msgstr "Exif情報"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:44
+msgid "It is meta information recorded in the photograph."
+msgstr "写真に記録されているメタ情報です。"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:64
-msgid "Tag list in photograph"
-msgstr "写真に付けられているタグリスト"
+msgid "It is a tag list put on the photograph."
+msgstr "写真に付けられているタグリストです。"
 

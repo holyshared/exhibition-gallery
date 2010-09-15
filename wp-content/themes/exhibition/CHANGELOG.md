@@ -14,7 +14,7 @@ EXHIBITION CHANGE LOG
 * RSSアイコンをフッターに追加。
 * 検索結果テンプレートを追加。
 * 多言語化対応
-
+* テンプレート中の文章の文言を修正。
 
 
 ## English
@@ -31,3 +31,4 @@ EXHIBITION CHANGE LOG
 * The RSS icon is added to the footer.
 * The retrieval result template is added.
 * For multilingualization.
+* Objections of sentences in the template are corrected.

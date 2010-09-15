@@ -8,13 +8,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-15 23:10+0900\n"
+"POT-Creation-Date: 2010-09-16 00:09+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:36
+msgid "nickname:"
+msgstr ""
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:49
+msgid "email:"
+msgstr ""
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:55
+msgid "url:"
+msgstr ""
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\about.php:61
+msgid "description:"
+msgstr ""
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:2
 msgid "Enter your password to view comments."
@@ -25,8 +41,7 @@ msgid "Trackback: "
 msgstr ""
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:10
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
-msgid "It is a comment that has been gotten before."
+msgid "It is a transmitted track back list."
 msgstr ""
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:13
@@ -35,6 +50,10 @@ msgstr ""
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
 msgid "Comment: "
+msgstr ""
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
+msgid "It is a comment that has been gotten before."
 msgstr ""
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:40
@@ -92,19 +111,19 @@ msgstr ""
 msgid "Sorry, the comment form is closed at this time."
 msgstr ""
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:47
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:65
 msgid "Widget on single page"
 msgstr ""
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:48
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:66
 msgid "Widget list for single page"
 msgstr ""
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:57
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:75
 msgid "Widget on page"
 msgstr ""
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:58
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\functions.php:76
 msgid "Widget list for page"
 msgstr ""
 
@@ -232,6 +251,10 @@ msgstr ""
 msgid "Exif: "
 msgstr ""
 
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:44
+msgid "It is meta information recorded in the photograph."
+msgstr ""
+
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:64
-msgid "Tag list in photograph"
+msgid "It is a tag list put on the photograph."
 msgstr ""

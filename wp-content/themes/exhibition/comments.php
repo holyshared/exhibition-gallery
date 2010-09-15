@@ -7,7 +7,7 @@
 <div class="mod trackback">
 	<div class="inner">
 		<div class="hd">
-			<h3><?php echo __("Trackback: ", "exhibition") ?></h3><p class="explanation"><?php echo __("It is a comment that has been gotten before.", "exhibition") ?></p>
+			<h3><?php echo __("Trackback: ", "exhibition") ?></h3><p class="explanation"><?php echo __("It is a transmitted track back list.", "exhibition") ?></p>
 		</div>
 		<div class="bd">
 			<p><?php echo __("Please send the track back to following URL.", "exhibition") ?><br /><a href="<?php trackback_url() ?>" rel="trackback"><?php trackback_url() ?></a></p>

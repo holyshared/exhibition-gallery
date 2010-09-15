@@ -41,7 +41,7 @@
 
 	<div class="mod exif">
 		<div class="inner">
-			<div class="hd"><h3><?php echo __("Exif: ", "exhibition") ?></h3><p class="explanation">Meta data recorded in photograph</p></div>
+			<div class="hd"><h3><?php echo __("Exif: ", "exhibition") ?></h3><p class="explanation"><?php echo __("It is meta information recorded in the photograph.", "exhibition") ?></p></div>
 			<div class="bd">
 				<ul>
 				<?php
@@ -61,7 +61,7 @@
 
 	<div class="mod tags">
 		<div class="inner">
-			<div class="hd"><h3><?php echo __("Tags: ", "exhibition") ?></h3><p class="explanation"><?php echo __("Tag list in photograph", "exhibition") ?></p></div>
+			<div class="hd"><h3><?php echo __("Tags: ", "exhibition") ?></h3><p class="explanation"><?php echo __("It is a tag list put on the photograph.", "exhibition") ?></p></div>
 			<div class="bd"><?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?></div>
 		</div>
 	</div>
