@@ -60,7 +60,7 @@
 <div id="postcomment" class="mod commentForm">
 	<div class="inner">
 		<div class="hd">
-			<h3><?php echo __("Reply: ", "exhibition") ?></h3><p class="explanation"><?php echo __("Please give the comment to this article.", "exhibition") ?></p>
+			<h3><?php echo __("Reply: ", "exhibition") ?></h3><p class="explanation"><?php echo __("Please give the comment to this photograph.", "exhibition") ?></p>
 		</div>
 
 		<div class="bd">
