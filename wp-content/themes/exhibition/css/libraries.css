@@ -4,8 +4,10 @@
 ---------------------------------------------------------*/
 * {
 /*	font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",  Verdana, Arial, Helvetica, sans-serif; */
-	font-family: Sylfaen, Georgia, "Times New Roman", serif;
+/*	font-family: Sylfaen, Georgia, "Times New Roman", serif; */
 /*	font-family: "ヒラギノ角ゴ Pro W3", "Myriad Pro", "Segoe UI",Helvetica, Arial, sans-serif; */
+
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ", Meiryo, Osaka,"ＭＳ Ｐゴシック","MS P Gothic", sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
@@ -62,6 +64,7 @@ p {
 ul {
 	list-style: none;
 	margin-bottom: 15px;
+	line-height: 160%
 }
 
 ul li {

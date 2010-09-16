@@ -23,6 +23,17 @@
 	background: transparent;
 }
 
+
+.exhibition .hd {
+	background: url(../images/bgi_desc_top.png) no-repeat left top;
+}
+
+.exhibition .bd {
+	background: url(../images/bgi_desc_bottom.png) no-repeat left bottom;
+	padding-bottom: 18px;
+}
+
+
 .exhibition .inner {
 	position: absolute;
 	top: 0px;
@@ -41,19 +52,24 @@
 	color: #ffffff;
 	text-align: center;
 	margin-bottom: 0px;
+}
+
+.exhibition .inner .description,
+.exhibition .inner .period,
+.exhibition .inner .thumbnail {
 	padding: 0px 15px 10px 15px;
 }
 
-.exhibition .hd {
-	background: url(../images/bgi_desc_top.png) no-repeat left top;
+.exhibition .inner .period,
+.exhibition .inner .thumbnail {
+	font-family: Sylfaen, Georgia, "Times New Roman", serif; 
 }
 
-.exhibition .bd {
-	background: url(../images/bgi_desc_bottom.png) no-repeat left bottom;
-	padding-bottom: 18px;
+.exhibition .inner .thumbnail img {
+	padding: 5px;
+	background: #ffffff;
+	border: 1px solid #e6e6e6;
 }
-
-
 
 
 
@@ -61,11 +77,12 @@
 /* Navigation
 ---------------------------------------------------------*/
 .global {
-	list-style: none; 
-	z-index: 9999;
-	margin-left: 156px;
 	font-size: 1.2em;
 	text-transform: uppercase;
+	list-style: none; 
+	margin-left: 156px;
+	z-index: 9999;
+	line-height: 130%;
 }
 
 .global li {
@@ -74,6 +91,7 @@
 }
 
 .global a, .menumatic a {
+	font-family: Sylfaen, Georgia, "Times New Roman", serif; 
 	text-decoration: none;
 	display: block;
 	padding: 13px 20px 12px 20px;
@@ -153,8 +171,10 @@
 
 /* Copyright
 ----------------------------------*/
-.copyright, .feed {
-	display: inline;
+.copyright,
+.copyright a,
+.copyright span {
+	font-family: Sylfaen, Georgia, "Times New Roman", serif; 
 }
 
 .copyright {
@@ -162,9 +182,15 @@
 	text-transform: uppercase;
 }
 
+.copyright, .feed {
+	display: inline;
+}
+
+
 .feed img {
 	vertical-align: middle;
 }
+
 .feed {
 	margin-right: 5px;
 }
@@ -706,6 +732,12 @@
 	padding: 15px;
 	margin: 50px auto 0px auto;
 }
+
+
+.widget_search {
+	font-size: 1.4em;
+}
+
 
 
 

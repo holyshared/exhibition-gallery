@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: exhibition - 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-15 11:25+0900\n"
-"PO-Revision-Date: 2010-09-16 00:25+0900\n"
+"PO-Revision-Date: 2010-09-16 23:39+0900\n"
 "Last-Translator: Noritaka Horio <holy.shared.design@gmail.com>\n"
 "Language-Team: Noritaka Horio <holy.shared.design@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -60,15 +60,15 @@ msgstr "コメント: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:40
 msgid "author: "
-msgstr "投稿者"
+msgstr "投稿者: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:41
 msgid "url: "
-msgstr "url: "
+msgstr "URL: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:62
 msgid "Comment Form: "
-msgstr "コメントフォーム"
+msgstr "コメントフォーム: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:62
 msgid "Please give the comment to this photograph."
@@ -251,7 +251,7 @@ msgstr "タグ: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:44
 msgid "Exif: "
-msgstr "Exif情報"
+msgstr "Exif情報: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:44
 msgid "It is meta information recorded in the photograph."

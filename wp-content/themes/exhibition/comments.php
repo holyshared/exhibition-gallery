@@ -89,7 +89,7 @@
 							</ul>
 							<p>
 								<label for="comment"><strong><?php echo __("comment", "exhibition") ?></strong></label><br />
-								<textarea id="comment" name="comment" cols="60" rows="7"></textarea>
+								<textarea id="comment" name="comment" cols="38" rows="7"></textarea>
 							</p>
 						</fieldset>
 		

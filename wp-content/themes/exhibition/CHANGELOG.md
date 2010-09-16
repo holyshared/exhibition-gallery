@@ -15,7 +15,9 @@ EXHIBITION CHANGE LOG
 * 検索結果テンプレートを追加。
 * 多言語化対応
 * テンプレート中の文章の文言を修正。
-* スタイルシートの修正
+* スタイルシートの修正。
+* 検索フォームテンプレートの追加。
+
 
 
 ## English
@@ -34,3 +36,4 @@ EXHIBITION CHANGE LOG
 * For multilingualization.
 * Objections of sentences in the template are corrected.
 * Correction of StyleSheet.
+* Addition of retrieval form template.
