@@ -14,19 +14,19 @@
 <div class="mod searchResult">
 <div class="inner">
 
-<div class="hd"><h2><?php _e("Retrieval result"); ?></h2></div>
+<div class="hd"><h2><?php _e("Retrieval result", "exhibition"); ?></h2></div>
 <div class="bd">
-	<p><?php _e("Sorry. The corresponding photograph was not found."); ?></p>
+	<p><?php _e("Sorry. The corresponding photograph was not found.", "exhibition"); ?></p>
 	<div class="mod searchForm">
 		<div class="inner">
 			<div class="hd">
-				<h3>Search</h3>
+				<h3><?php _e("Search", "exhibition"); ?></h3>
 			</div>
 			<div class="bd">
-				<p>The article matched from in the site to the key word is displayed.</p>
+				<p><?php _e("The article matched from in the site to the key word is displayed.", "exhibition") ?></p>
 				<form method="get" action="<?php bloginfo('home'); ?>">
 					<fieldset>
-						<input type="text" name="s" id="s" size="80" />&nbsp;<input type="submit" value="<?php esc_attr_e('Search'); ?>" />
+						<input type="text" name="s" id="s" size="50" />&nbsp;<input type="submit" value="<?php esc_attr_e('Search'); ?>" />
 					</fieldset>
 				</form>
 			</div>

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: exhibition - 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-15 11:25+0900\n"
-"PO-Revision-Date: 2010-09-16 23:39+0900\n"
+"PO-Revision-Date: 2010-09-17 00:47+0900\n"
 "Last-Translator: Noritaka Horio <holy.shared.design@gmail.com>\n"
 "Language-Team: Noritaka Horio <holy.shared.design@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -46,10 +46,6 @@ msgstr "トラックバック: "
 msgid "It is a transmitted track back list."
 msgstr "送信されたトラックバック一覧です。"
 
-#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
-msgid "It is a comment that has been gotten before."
-msgstr "頂いたコメントです。"
-
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:13
 msgid "Please send the track back to following URL."
 msgstr "下記のURLにトラックバックを送信してください。"
@@ -57,6 +53,10 @@ msgstr "下記のURLにトラックバックを送信してください。"
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
 msgid "Comment: "
 msgstr "コメント: "
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:25
+msgid "It is a comment that has been gotten before."
+msgstr "頂いたコメントです。"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\comments.php:40
 msgid "author: "
@@ -148,6 +148,14 @@ msgstr "検索結果"
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\search.php:19
 msgid "Sorry. The corresponding photograph was not found."
 msgstr "すみません。 該当する写真は見つけられませんでした。"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\search.php:23
+msgid "Search"
+msgstr "検索"
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\search.php:26
+msgid "The article matched from in the site to the key word is displayed."
+msgstr "サイト内からキーワードにマッチする写真(記事)を検索します。"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:45
 msgid "Details in the photograph are seen"
@@ -242,7 +250,7 @@ msgstr "日付: "
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:16
 msgid "F jS, Y"
-msgstr "F jS, Y"
+msgstr "Y年m月d日"
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:17
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\static\single.php:64

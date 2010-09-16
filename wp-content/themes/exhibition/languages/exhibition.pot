@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-16 00:09+0900\n"
+"POT-Creation-Date: 2010-09-17 00:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,6 +145,14 @@ msgstr ""
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\search.php:19
 msgid "Sorry. The corresponding photograph was not found."
+msgstr ""
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\search.php:23
+msgid "Search"
+msgstr ""
+
+#: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\search.php:26
+msgid "The article matched from in the site to the key word is displayed."
 msgstr ""
 
 #: C:\var\www\git\exhibition-gallery\wp-content\themes\exhibition\ajax\single.php:45
