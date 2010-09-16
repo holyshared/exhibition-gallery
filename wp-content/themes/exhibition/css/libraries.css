@@ -3,10 +3,6 @@
 /* Default Style
 ---------------------------------------------------------*/
 * {
-/*	font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",  Verdana, Arial, Helvetica, sans-serif; */
-/*	font-family: Sylfaen, Georgia, "Times New Roman", serif; */
-/*	font-family: "ヒラギノ角ゴ Pro W3", "Myriad Pro", "Segoe UI",Helvetica, Arial, sans-serif; */
-
 	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ", Meiryo, Osaka,"ＭＳ Ｐゴシック","MS P Gothic", sans-serif;
 	margin: 0px;
 	padding: 0px;
@@ -103,4 +99,20 @@ fieldset {
 .controls {
 	text-align: center;
 	margin: 0px auto 20px auto;
+}
+
+.controls input {
+	font-weight: bold;
+	cursor: pointer;
+	color: #ffffff;
+	background: #333333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px 15px;
+	border: none;
+}
+
+.controls input:hover {
+	background: #3c94af;
 }
