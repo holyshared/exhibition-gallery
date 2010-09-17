@@ -3,6 +3,10 @@ EXHIBITION CHANGE LOG
 
 ## Japanese
 
+### version 1.0.1
+* 不要なmetaタグを削除
+* 不要なGoogleAnalyticsコードを削除
+
 ### version 1.0
 * テーマ有効／無効時のオプションの設定処理を追加。
 * プレビューワーの表示が崩れる不具合を改修。
@@ -22,8 +26,11 @@ EXHIBITION CHANGE LOG
 
 ## English
 
-### version 1.0
+### version 1.0.1
+* Unnecessary meta tag is deleted. 
+* An unnecessary GoogleAnalytics code is deleted. 
 
+### version 1.0
 * Set processing of the option to which the theme is effective/invalid is added.
 * Trouble that the display of previewer collapses is repaired.
 * Trouble to which the scrollbar is displayed with Opera is corrected.

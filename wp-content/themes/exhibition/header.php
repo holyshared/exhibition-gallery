@@ -5,7 +5,6 @@
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		<meta name="google-site-verification" content="sAx81E3uAUaQpeaJ7NiSba3jF3bkb3aKpd1XFwUxB2k" />
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?> 
 		<?php wp_head(); ?>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mootools-core.js"></script>
